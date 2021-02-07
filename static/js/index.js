@@ -35,7 +35,7 @@ const rotateCard = (obj,string,view) => {
     else{
         if(string === 'front'){
             
-            var card_front_array = $('.card-container-mobile');
+            var card_front_array = $('#mobile-container .card-container');
             var card_front_flip = card_front_array[service_index-1].children[0];
             
             var card_back_flip = card_front_array[service_index-1].children[1];
@@ -47,7 +47,7 @@ const rotateCard = (obj,string,view) => {
         else{
             
 
-            var card_front_array = $('.card-container-mobile');
+            var card_front_array = $('#mobile-container .card-container');
             var card_front_flip = card_front_array[service_index-1].children[0];
             
             var card_back_flip = card_front_array[service_index-1].children[1];

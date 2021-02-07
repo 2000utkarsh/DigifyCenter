@@ -31,17 +31,6 @@
     <!-- Navbar Starts -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top dc-bg-dark">
         <a class="navbar-brand" href="#">Digify Center</a>
-        <button  
-            class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarNav" 
-            aria-controls="navbarNav" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -488,16 +477,8 @@
     <div id="mobile-container">
         <!-- Backdrop Starts -->
         <div id="backdrop" class="dc-bg-dark">
-            <div class="backdrop-traingle-left"></div>
-            <div class="backdrop-traingle-right"></div>
             <div id="box1"></div>
-            <div id="box2">
-                <div id="backdrop-text">
-                    Join 7+ million building<br>
-                    unique content with <br>
-                    Digify Center
-                </div>
-            </div>
+            <div id="box2"></div>
         </div>
         <section id="space-filler"></section>
         <!-- Backdrop Ends -->
@@ -509,174 +490,175 @@
                     <h3 class="dc-color-dark">What's in Store for You...</h3>
                 </center>
                 <div class="row mt-4 row-card">
-                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <center>
-                            <div class="card-container">
-                                <div class="card card-front shadow services-card card-service-desktop">
-                                    <div
-                                        class="card-service-img-div">
-                                        <img src="./static/imgs/web-dev.png" class="card-img-top" id="img-card-front-web-dev" alt="..." >
+                    <center>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
+                            <center>
+                                <div class="card-container">
+                                    <div class="card card-front shadow services-card card-service-mobile">
+                                        <div
+                                            class="card-service-img-div">
+                                            <img src="./static/imgs/web-dev.png" class="card-img-top" id="img-card-front-web-dev" alt="..." >
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Website Development</h5>
+                                            <p class="card-text">Craving for some online presence? <br>Get quality
+                                                websites.
+                                                Stunning looks and breathtaking features all at one place.
+                                                <br><b><em>Just
+                                                        as
+                                                        you say, just as you want!</b></em>
+                                            </p>
+                                        </div>
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-1"
+                                                onclick="rotateCard(this,'front','mobile')"><a
+                                                    href="javascript:void(0)" class="card-link text-white">Know
+                                                    More</a></button>
+        
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Website Development</h5>
-                                        <p class="card-text">Craving for some online presence? <br>Get quality
-                                            websites.
-                                            Stunning looks and breathtaking features all at one place.
-                                            <br><b><em>Just
-                                                    as
-                                                    you say, just as you want!</b></em>
-                                        </p>
-                                    </div>
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-1"
-                                            onclick="rotateCard(this,'front','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
-                                                More</a></button>
-    
-                                    </div>
-                                </div>
-                                <div class="card card-back shadow services-card card-service-desktop">
-    
-                                    <div>
-                                        <img src="./static/imgs/web-dev.png" class="card-img-top" alt="..." id="img-card-back-web-dev" >
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Breathtaking Aesthetics
-                                        </li>
-                                        <li class="list-group-item">Admin Dashboard</li>
-                                        <li class="list-group-item">Multiple User Groups</li>
-                                        <li class="list-group-item">Dynamically controlled
-                                            content</li>
-                                        <li class="list-group-item">Data Storage Facility</li>
-                                    </ul>
-    
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-1"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
-                                                Less</a></button>
-    
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </center>
-                    </div>
-    
-                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <center>
-                            <div class="card-container">
-                                <div class="card card-front shadow services-card card-service-desktop">
-                                    <div class="card-service-img-div">
-                                        <img src="./static/imgs/app-dev.png" class="card-img-top" id="img-card-front-app-dev" alt="..." >
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Application Development</h5>
-                                        <p class="card-text">Android? iOS? Confused? <br> Worry no more. Get your
-                                            application
-                                            flawlessly done in a blink, right here. <br><b><em>Just as you say, just as you
-                                                    want!</b></em></p>
-                                    </div>
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-2"
-                                            onclick="rotateCard(this, 'front','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
-                                                More</a></button>
-    
+                                    <div class="card card-back shadow services-card card-service-mobile">
+        
+                                        <div>
+                                            <img src="./static/imgs/web-dev.png" class="card-img-top" alt="..." id="img-card-back-web-dev" >
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Breathtaking Aesthetics
+                                            </li>
+                                            <li class="list-group-item">Admin Dashboard</li>
+                                            <li class="list-group-item">Multiple User Groups</li>
+                                            <li class="list-group-item">Dynamically controlled
+                                                content</li>
+                                            <li class="list-group-item">Data Storage Facility</li>
+                                        </ul>
+        
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-1"
+                                                onclick="rotateCard(this,'back','mobile')"><a
+                                                    href="javascript:void(0)" class="card-link text-white">Know
+                                                    Less</a></button>
+        
+        
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card card-back shadow services-card card-service-desktop">
-    
-                                    <div>
-                                        <img src="./static/imgs/app-dev.png" class="card-img-top" alt="..." id="img-card-back-app-dev">
+                            </center>
+                        </div>
+                    
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
+                            <center>
+                                <div class="card-container">
+                                    <div class="card card-front shadow services-card card-service-mobile">
+                                        <div class="card-service-img-div">
+                                            <img src="./static/imgs/app-dev.png" class="card-img-top" id="img-card-front-app-dev" alt="..." >
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Application Development</h5>
+                                            <p class="card-text">Android? iOS? Confused? <br> Worry no more. Get your
+                                                application
+                                                flawlessly done in a blink, right here. <br><b><em>Just as you say, just as you
+                                                        want!</b></em></p>
+                                        </div>
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-2"
+                                                onclick="rotateCard(this, 'front','mobile')"><a
+                                                    href="javascript:void(0)" class="card-link text-white">Know
+                                                    More</a></button>
+        
+                                        </div>
                                     </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Stunning Visuals</li>
-                                        <li class="list-group-item">iOS & Android Compatible
-                                        </li>
-                                        <li class="list-group-item">Data Security & Isolation
-                                        </li>
-                                        <li class="list-group-item">User Hierarchy Control</li>
-                                        <li class="list-group-item">Clear Privacy Policies</li>
-                                    </ul>
-    
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-2"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
-                                                Less</a></button>
-    
-    
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </center>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                        <center>
-                            <div class="card-container">
-                                <div class="card card-front shadow services-card card-service-desktop">
-                                    <div class="card-service-img-div">
-                                        <img src="./static/imgs/erp.png" class="card-img-top" id="img-card-front-erp" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">ERP Solutions</h5>
-                                        <p class="card-text">Too tired of handling your business alone ? <br> Get some quick
-                                            digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just as
-                                                    you
-                                                    say, just as you
-                                                    want!</b></em></p>
-                                    </div>
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-3"
-                                            onclick="rotateCard(this,'front','desktop')" ><a href="javascript:void(0)"
-                                                class="card-link text-white">Know More</a></button>
-    
-                                    </div>
-                                </div>
-                                <div class="card card-back shadow services-card card-service-desktop">
-    
-                                    <div>
-                                        <img src="./static/imgs/erp.png" class="card-img-top" alt="..." id="img-card-back-erp">
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Extremely Scalable</li>
-                                        <li class="list-group-item">Marketing & Financial
-                                            Analytics</li>
-                                        <li class="list-group-item">Employee Class Division
-                                        </li>
-                                        <li class="list-group-item">Internal Communication
-                                            Channels</li>
-                                        <li class="list-group-item">Nominal Pricing</li>
-                                    </ul>
-    
-    
-                                    <div class="card-body">
-    
-                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-3"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
-                                                Less</a></button>
-    
-    
+                                    <div class="card card-back shadow services-card card-service-mobile">
+        
+                                        <div>
+                                            <img src="./static/imgs/app-dev.png" class="card-img-top" alt="..." id="img-card-back-app-dev">
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Stunning Visuals</li>
+                                            <li class="list-group-item">iOS & Android Compatible
+                                            </li>
+                                            <li class="list-group-item">Data Security & Isolation
+                                            </li>
+                                            <li class="list-group-item">User Hierarchy Control</li>
+                                            <li class="list-group-item">Clear Privacy Policies</li>
+                                        </ul>
+        
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-2"
+                                                onclick="rotateCard(this,'back','mobile')"><a
+                                                    href="javascript:void(0)" class="card-link text-white">Know
+                                                    Less</a></button>
+        
+        
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </center>
-                    </div>
-    
-    
+        
+                            </center>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
+                            <center>
+                                <div class="card-container">
+                                    <div class="card card-front shadow services-card card-service-mobile">
+                                        <div class="card-service-img-div">
+                                            <img src="./static/imgs/erp.png" class="card-img-top" id="img-card-front-erp" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">ERP Solutions</h5>
+                                            <p class="card-text">Too tired of handling your business alone ? <br> Get some quick
+                                                digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just as
+                                                        you
+                                                        say, just as you
+                                                        want!</b></em></p>
+                                        </div>
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-3"
+                                                onclick="rotateCard(this,'front','mobile')" ><a href="javascript:void(0)"
+                                                    class="card-link text-white">Know More</a></button>
+        
+                                        </div>
+                                    </div>
+                                    <div class="card card-back shadow services-card card-service-mobile">
+        
+                                        <div>
+                                            <img src="./static/imgs/erp.png" class="card-img-top" alt="..." id="img-card-back-erp">
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Extremely Scalable</li>
+                                            <li class="list-group-item">Marketing & Financial
+                                                Analytics</li>
+                                            <li class="list-group-item">Employee Class Division
+                                            </li>
+                                            <li class="list-group-item">Internal Communication
+                                                Channels</li>
+                                            <li class="list-group-item">Nominal Pricing</li>
+                                        </ul>
+        
+        
+                                        <div class="card-body">
+        
+                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-3"
+                                                onclick="rotateCard(this,'back','mobile')"><a
+                                                    href="javascript:void(0)" class="card-link text-white">Know
+                                                    Less</a></button>
+        
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </center>
                 </div>
             </div>
         </section>
