@@ -159,6 +159,22 @@
     }
     /* Services Section Styling Ends */
 
+    /* Features Section Styling Starts */
+    #mobile-container .card-feature-mobile{
+        transition: all 0.9s;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+    }
+
+    #mobile-container .feature-card-column {
+        height: 700px;
+    }
+
+    #mobile-container .feature-text-hidden {
+        visibility: hidden;
+    }
+    /* Features Section Styling Ends */
+
 
 
 
