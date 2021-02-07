@@ -219,7 +219,12 @@
     
     
     /* Testimonials Section Styling Starts */
+    #mobile-container #testimonials {
+        padding-top: 2rem;
+    }
+
     #mobile-container .testimonial-card {
+        margin-top: 1rem;
         background: transparent;
         border: none;
     }
@@ -230,5 +235,12 @@
         border-radius: 50%;
     }
     /* Testimonials Section Styling Ends */
+
+
+    /* Footer Styling Starts */
+    #mobile-container footer {
+        padding-bottom: 8rem;
+    }
+    /* Footer Styling Ends */
 
 }
