@@ -1,5 +1,5 @@
 $(document).ready(() => {
-
+    appearOnScroll()
 })
 
 const rotateCard = (obj,string,view) => {
@@ -57,4 +57,29 @@ const rotateCard = (obj,string,view) => {
         }
     }
     
+}
+
+const appearOnScroll = () => {
+
+    const features_row = $('.features-row');
+    const appearOptions = {
+        threshold: 1,
+        rootMargin: "0px 0px 150px 0px"
+    }
+
+    let appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+            else {
+                target = entry.target
+                target.classList.add("appear");
+                appearOnScroll.unobserve(target);
+            }
+        });
+    }, appearOptions);
+    features_row.each(feature => {
+        appearOnScroll.observe(features_row[feature]);
+    })
 }

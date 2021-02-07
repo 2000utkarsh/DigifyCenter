@@ -175,7 +175,8 @@
 
 /* Services Section Styling Starts */
 #services {
-    min-height: 20vh;
+    padding-top: 1.5rem;
+    height: 750px;
 }
 
 .card-container:hover {
@@ -247,5 +248,40 @@
     padding-bottom: 20px;
     height: 260px;
 }
-
 /* Services Section Styling Ends */
+
+/* Features Section Styling Starts */
+#img-feature-magical-ui {
+    height: 270px;
+    width: 530px;
+}
+#img-feature-security {
+    height: 400px;
+    width: 280px;
+}
+#img-feature-old-is-obselete{
+    height: 350px;
+    width: 380px;
+}
+#img-feature-time-cannot-be-bought{
+    margin-left: -5rem;
+    height: 350px;
+    width: 460px;
+}
+
+.features-row {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-in, opacity 1s;
+
+}
+
+.features-row.appear {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.features-row-sub-heading {
+    display: block;
+}
+/* Features Section Styling Ends */
