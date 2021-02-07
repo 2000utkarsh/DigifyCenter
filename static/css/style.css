@@ -135,7 +135,41 @@
 
 
 /* Button Styling Starts */
+.dc-btn {
+    /* background-color: green; */
+    border-radius: 1.2rem;
+    transition: color 1.4s linear !important;
+    overflow: hidden;
+    position: relative;
+    color: #000 !important;
+    z-index: 0;
+}
 
+.dc-btn:hover {
+    color: #fff !important;
+}
+
+.dc-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(235, 235, 235, 0.671);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transition: transform 1.4s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(1, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.dc-btn:hover:before {
+    transform: scaleX(1);
+    transition: 1.4s;
+}
 /* Button Styling Ends */
 
 
@@ -159,7 +193,7 @@
 
 .card-back, .card-front {
     border-radius: 1rem;
-    height: 620px;
+    height: 580px;
 }
 
 .card-back{
@@ -200,15 +234,18 @@
 }
 
 #img-card-back-web-dev {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    height: 260px;
 }
 
 #img-card-back-app-dev {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    height: 260px;
 }
 
 #img-card-back-erp {
-    padding-bottom: 0;
+    padding-bottom: 20px;
+    height: 260px;
 }
 
 /* Services Section Styling Ends */
