@@ -1,6 +1,13 @@
 $(document).ready(() => {
     appearOnScroll();
     slideOwlCarousel();
+    setTimeout(() => {
+        appearSignupForm();
+    }, 1000);
+    automaticAppearSignupFormTimer = setTimeout(() => {
+        automaticAppearSignupForm()
+    }, 20000);
+    manageSignupForm();
 })
 
 const rotateCard = (obj,string,view) => {
@@ -93,4 +100,38 @@ const slideOwlCarousel = () => {
         autoplayHoverPause: true,
         items: 1
     });
+}
+
+const automaticAppearSignupForm = () => {
+    var signup_form_section = $('#signup-form');
+    var signup_form_open_close_icon = $('#signup-form-open-close-icon');
+
+    signup_form_section.animate({ bottom: '0px' }, 1000);
+    signup_form_open_close_icon.html('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+
+}
+
+const appearSignupForm = () => {
+    var signup_form_section = $('#signup-form');
+    signup_form_section.animate({ bottom: '-390px' }, 'slow');
+}
+
+const manageSignupForm = () => {
+    var signup_form_section = $('#signup-form');
+    var signup_form_open_close_icon = $('#signup-form-open-close-icon');
+
+    signup_form_open_close_icon.click(() => {
+        clearTimeout(automaticAppearSignupFormTimer);
+        var current_bottom_value = signup_form_section.css('bottom');
+        current_bottom_value = parseInt(current_bottom_value.split('px')[0]);
+
+        if (current_bottom_value < 0) {
+            signup_form_section.css('bottom', '0px');
+            signup_form_open_close_icon.html('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+        } else {
+            signup_form_section.css('bottom', '-390px');
+            signup_form_open_close_icon.html('<i class="fa fa-angle-up" aria-hidden="true"></i>');
+        }
+
+    })
 }

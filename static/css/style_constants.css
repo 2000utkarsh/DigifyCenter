@@ -61,6 +61,10 @@
 }
 /* Button Styling Ends */
 
+.primitive-icons {
+    font-size: 2rem;
+}
+
 
 #desktop-container {
     display: block;
