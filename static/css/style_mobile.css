@@ -169,15 +169,19 @@
     #mobile-container .feature-card-column {
         height: 700px;
     }
+
     #mobile-container .feature-card-column-magical-ui {
         height: 550px;
     }
+
     #mobile-container .feature-card-column-security {
         height: 710px;
     }
+
     #mobile-container .feature-card-column-old-is-obselete {
         height: 630px;
     }
+
     #mobile-container .feature-card-column-time-cannot-be-bought {
         height: 630px;
     }
@@ -212,5 +216,19 @@
         padding: 1rem;
     }
     /* Features Section Styling Ends */
+    
+    
+    /* Testimonials Section Styling Starts */
+    #mobile-container .testimonial-card {
+        background: transparent;
+        border: none;
+    }
+    
+    #mobile-container .testimonial-img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    /* Testimonials Section Styling Ends */
 
 }

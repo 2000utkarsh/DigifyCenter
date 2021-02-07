@@ -1,5 +1,6 @@
 $(document).ready(() => {
-    appearOnScroll()
+    appearOnScroll();
+    slideOwlCarousel();
 })
 
 const rotateCard = (obj,string,view) => {
@@ -82,4 +83,14 @@ const appearOnScroll = () => {
     features_row.each(feature => {
         appearOnScroll.observe(features_row[feature]);
     })
+}
+
+const slideOwlCarousel = () => {
+    $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000, //2000ms = 2s;
+        autoplayHoverPause: true,
+        items: 1
+    });
 }
