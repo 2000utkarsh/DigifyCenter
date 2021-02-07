@@ -1,3 +1,4 @@
+/* Backdrop Styling Starts */
 #backdrop {
     width: 100%;
     height: 100%;
@@ -6,7 +7,6 @@
     z-index: -2;
 
 }
-
 
 #box1 {
     width: 530px;
@@ -30,7 +30,6 @@
 
 }
 
-
 #box2 {
     width: auto;
     height: auto;
@@ -43,7 +42,6 @@
     left: 100px;
     overflow: hidden;
 }
-
 
 #backdrop-text {
     position: relative;
@@ -119,7 +117,8 @@
       left: -150%;
     }
   }
-  @keyframes slide2 {
+
+@keyframes slide2 {
     0% {
       right: -50%;
     }
@@ -128,3 +127,88 @@
     }
   }
 
+#space-filler {
+    height: 100vh;
+    background-color: transparent;
+}
+/* Backdrop Styling Ends */
+
+
+/* Button Styling Starts */
+
+/* Button Styling Ends */
+
+
+/* Services Section Styling Starts */
+#services {
+    min-height: 20vh;
+}
+
+.card-container:hover {
+    transition: transform 1s !important;
+    transform: scale(1.03, 1.03) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+
+}
+
+.card-container{
+	position: relative;
+    width: 22rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-back, .card-front {
+    border-radius: 1rem;
+    height: 620px;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card-front{
+}
+
+.card-service-desktop{
+	position: absolute;
+	transition: all 0.9s;
+	backface-visibility: hidden;
+}
+
+.card-back .card-body{
+	position: relative;
+}
+
+#img-card-front-web-dev,
+#img-card-front-app-dev,
+#img-card-front-erp,
+#img-card-back-web-dev,
+#img-card-back-app-dev,
+#img-card-back-erp {
+    padding: 30px;
+    height: 300px;
+    width: 365px;
+}
+
+#img-card-front-web-dev {
+}
+
+#img-card-front-app-dev {
+}
+
+#img-card-front-erp {
+}
+
+#img-card-back-web-dev {
+    padding-bottom: 0;
+}
+
+#img-card-back-app-dev {
+    padding-bottom: 0;
+}
+
+#img-card-back-erp {
+    padding-bottom: 0;
+}
+
+/* Services Section Styling Ends */
