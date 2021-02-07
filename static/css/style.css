@@ -1,5 +1,5 @@
 /* Backdrop Styling Starts */
-#backdrop {
+#desktop-container #backdrop {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -8,7 +8,7 @@
 
 }
 
-#box1 {
+#desktop-container #box1 {
     width: 530px;
     height: 625px;
     background-image: url("../imgs/img-3.png");
@@ -19,7 +19,7 @@
                animation-left-to-right 3s forwards 3s;
 }
 
-#box1:after {
+#desktop-container #box1:after {
     content: '';
     position: absolute;
     width: 530px;
@@ -30,7 +30,7 @@
 
 }
 
-#box2 {
+#desktop-container #box2 {
     width: auto;
     height: auto;
     color: white;
@@ -43,7 +43,7 @@
     overflow: hidden;
 }
 
-#backdrop-text {
+#desktop-container #backdrop-text {
     position: relative;
     left: -100%;
     animation: animation-text-left-to-right 2s forwards 3s;
@@ -85,7 +85,7 @@
     }
 }
 
-.backdrop-traingle-left {
+#desktop-container .backdrop-traingle-left {
     animation: slide 3s forwards;
     background-image: linear-gradient(-60deg, rgba(102, 204, 51, 0) 50%, rgb(235, 102, 191) 50%);
     bottom:0;
@@ -97,7 +97,7 @@
     z-index:-1;
 }
 
-.backdrop-traingle-right {
+#desktop-container .backdrop-traingle-right {
     animation: slide2 3s forwards;
     background-image: linear-gradient(-60deg, rgb(102, 138, 235) 50%, rgba(102, 204, 51, 0) 50%);
     bottom:0;
@@ -127,7 +127,7 @@
     }
   }
 
-#space-filler {
+#desktop-container #space-filler {
     height: 100vh;
     background-color: transparent;
 }
@@ -174,132 +174,120 @@
 
 
 /* Services Section Styling Starts */
-#services {
+#desktop-container #services {
     padding-top: 1.5rem;
     height: 750px;
 }
 
-.card-container:hover {
+#desktop-container .card-container:hover {
     transition: transform 1s !important;
     transform: scale(1.03, 1.03) !important;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 
 }
 
-.card-container{
+#desktop-container .card-container{
 	position: relative;
     width: 22rem;
     margin-bottom: 1.5rem;
 }
 
-.card-back, .card-front {
+#desktop-container .card-back, #desktop-container .card-front {
     border-radius: 1rem;
     height: 580px;
 }
 
-.card-back{
+#desktop-container .card-back{
     transform: rotateY(180deg);
 }
 
-.card-front{
-}
-
-.card-service-desktop{
+#desktop-container .card-service-desktop{
 	position: absolute;
 	transition: all 0.9s;
 	backface-visibility: hidden;
 }
 
-.card-back .card-body{
+#desktop-container .card-back .card-body{
 	position: relative;
 }
 
-#img-card-front-web-dev,
-#img-card-front-app-dev,
-#img-card-front-erp,
-#img-card-back-web-dev,
-#img-card-back-app-dev,
-#img-card-back-erp {
+#desktop-container #img-card-front-web-dev,
+#desktop-container #img-card-front-app-dev,
+#desktop-container #img-card-front-erp,
+#desktop-container #img-card-back-web-dev,
+#desktop-container #img-card-back-app-dev,
+#desktop-container #img-card-back-erp {
     padding: 30px;
     height: 300px;
     width: 365px;
 }
 
-#img-card-front-web-dev {
-}
-
-#img-card-front-app-dev {
-}
-
-#img-card-front-erp {
-}
-
-#img-card-back-web-dev {
+#desktop-container #img-card-back-web-dev {
     padding-bottom: 20px;
     height: 260px;
 }
 
-#img-card-back-app-dev {
+#desktop-container #img-card-back-app-dev {
     padding-bottom: 20px;
     height: 260px;
 }
 
-#img-card-back-erp {
+#desktop-container #img-card-back-erp {
     padding-bottom: 20px;
     height: 260px;
 }
 /* Services Section Styling Ends */
 
 /* Features Section Styling Starts */
-#img-feature-magical-ui {
+#desktop-container #img-feature-magical-ui {
     height: 270px;
     width: 530px;
 }
-#img-feature-security {
+#desktop-container #img-feature-security {
     height: 400px;
     width: 280px;
 }
-#img-feature-old-is-obselete{
+#desktop-container #img-feature-old-is-obselete{
     height: 350px;
     width: 380px;
 }
-#img-feature-time-cannot-be-bought{
+#desktop-container #img-feature-time-cannot-be-bought{
     margin-left: -5rem;
     height: 350px;
     width: 460px;
 }
 
-.features-row {
+#desktop-container .features-row {
     transform: translateY(100px);
     opacity: 0;
     transition: transform 1s ease-in, opacity 1s;
 
 }
 
-.features-row.appear {
+#desktop-container .features-row.appear {
     transform: translateY(0px);
     opacity: 1;
 }
 
-.features-row-sub-heading {
+#desktop-container .features-row-sub-heading {
     display: block;
 }
 /* Features Section Styling Ends */
 
 
 /* Testimonials Section Styling Starts */
-.testimonial-card {
+#desktop-container .testimonial-card {
     background: transparent;
     border: none;
 }
 
-.testimonial-img {
+#desktop-container .testimonial-img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
 }
 
-.testimonial-img:hover {
+#desktop-container .testimonial-img:hover {
     transition: transform 1s;
     transform: scale(1.13, 1.13);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
