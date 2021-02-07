@@ -285,4 +285,11 @@
     color: #fff;
     /* animation: 1s infinite animateButton; */
 }
+
+#desktop-container .img-form-success {
+    display:none; 
+    height: 120px; 
+    width: 160px; 
+    margin-top: 30%;
+}
 /* Signup Form Section Ends */

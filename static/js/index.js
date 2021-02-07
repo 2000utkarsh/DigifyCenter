@@ -3,7 +3,7 @@ $(document).ready(() => {
     slideOwlCarousel();
     setTimeout(() => {
         appearSignupForm();
-    }, 1000);
+    }, 7000);
     automaticAppearSignupFormTimer = setTimeout(() => {
         automaticAppearSignupForm()
     }, 20000);
@@ -134,4 +134,69 @@ const manageSignupForm = () => {
         }
 
     })
+}
+
+const validateFormData = (name, email, contact_number) => {
+    
+    var valid_contact_number = /^\d{10}$/;
+    if (!(valid_contact_number.test(contact_number))) {
+        return false;
+    }
+
+    var valid_email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (!(valid_email.test(email))) {
+        return false
+    }
+
+    if (!(name.length > 0)) {
+        return false;
+    }
+
+    // Every input is successfully validated
+    return true;
+}
+
+const sendRequest = (name, email, contact_number) => {
+    $.ajax({
+        url: "get_details",
+        method: 'POST',
+        data: {
+            'name': name,
+            'email': email,
+            'contact_number': contact_number,
+        },
+        dataType: 'json',
+        success: function(){
+            $('.form-signup-form').css('display','none');
+            $('.submit-btn-signup-form').css('display','none');
+            $('.form-validation-warning').css('display','none');
+            $('.img-form-success').css('display','block');
+        }
+        
+    });
+}
+
+const submitForm = () => {
+    var signup_name = $('#signup-name').val()
+    var signup_email = $('#signup-email').val()
+    var signup_contact_number = $('#signup-contact-number').val()
+
+    data_is_valid = validateFormData(
+        signup_name,
+        signup_email,
+        signup_contact_number
+        )
+
+    if (data_is_valid) {
+        $('.form-validation-warning').css('display', 'none');
+        sendRequest(
+            signup_name,
+            signup_email,
+            signup_contact_number
+        )
+    } else {
+        $('.form-validation-warning').css('display', 'block');
+    }
+
+
 }

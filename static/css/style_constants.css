@@ -59,11 +59,11 @@
     transform: scaleX(1);
     transition: 1.4s;
 }
-/* Button Styling Ends */
 
-.primitive-icons {
-    font-size: 2rem;
+a {
+    text-decoration: none !important;
 }
+/* Button Styling Ends */
 
 
 #desktop-container {
