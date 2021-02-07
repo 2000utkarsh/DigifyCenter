@@ -285,3 +285,23 @@
     display: block;
 }
 /* Features Section Styling Ends */
+
+
+/* Testimonials Section Styling Starts */
+.testimonial-card {
+    background: transparent;
+    border: none;
+}
+
+.testimonial-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.testimonial-img:hover {
+    transition: transform 1s;
+    transform: scale(1.13, 1.13);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+/* Testimonials Section Styling Ends */
