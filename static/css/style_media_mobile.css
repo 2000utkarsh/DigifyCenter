@@ -1297,7 +1297,12 @@
     #mobile-container .testimonial-heading{
         font-size: 1.2rem;
     }
+    #mobile-container #signup-form {
+        height: 460px;
+        width: 245px;        
+        top: 180px;
+        left: -250px;
+    }
 }
-
 
 /* Media Queries < 1000px Ends */

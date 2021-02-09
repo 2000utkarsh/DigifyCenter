@@ -11,6 +11,7 @@ $(document).ready(() => {
     }, 20000);
     manageSignupFormDesktop();
     manageSignupFormMobile();
+    console.clear();
 })
 
 const rotateCard = (obj,string,view) => {
@@ -153,7 +154,14 @@ const automaticAppearSignupFormMobile = () => {
 
 const appearSignupFormMobile = () => {
     var signup_form_section = $('#mobile-container #signup-form');
-    signup_form_section.animate({ left: '-230px' }, 'slow');
+    var signup_form_section = $('#mobile-container #signup-form');
+    var left_value = '-230px'
+    var window_size = $(window).width();
+    if(window_size<280){
+        left_value = '-205px'
+    }
+
+    signup_form_section.animate({ left: left_value }, 'slow');
 }
 
 const manageSignupFormMobile = () => {
@@ -166,6 +174,12 @@ const manageSignupFormMobile = () => {
         clearTimeout(automaticAppearSignupFormTimer);
         var current_left_value = signup_form_section.css('left');
         current_left_value = parseInt(current_left_value.split('px')[0]);
+        var left_value = '-230px'
+        var window_size = $(window).width();
+
+        if(window_size<280){
+            left_value = '-200px'
+        }
 
         if (current_left_value < 0) {
             signup_form_section.css('left', '0px');
@@ -173,7 +187,7 @@ const manageSignupFormMobile = () => {
             signup_form_extension_right.css('background-color','rgb(233, 245, 250)');
             signup_form_header.css('border-bottom-right-radius','0px');
         } else {
-            signup_form_section.css('left', '-230px');
+            signup_form_section.css('left', left_value);
             signup_form_open_close_icon.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
             signup_form_extension_right.css('background-color','transparent');
             signup_form_header.css('border-bottom-right-radius','15px');
