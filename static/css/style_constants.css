@@ -59,6 +59,10 @@
     transform: scaleX(1);
     transition: 1.4s;
 }
+
+a {
+    text-decoration: none !important;
+}
 /* Button Styling Ends */
 
 
