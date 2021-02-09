@@ -1,0 +1,131 @@
+/* 1000 < Media Queries < 1500 Starts */
+
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    #desktop-container #img-feature-magical-ui{
+        height: 250px !important;
+        width: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+    #desktop-container #img-feature-magical-ui{
+        height: 220px !important;
+        width: 440px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    #desktop-container #img-feature-magical-ui{
+        height: 200px !important;
+        width: 400px !important;
+    }
+
+    #desktop-container #img-feature-security{
+        height: 350px !important;
+        width: 245px !important;
+    }
+
+    #desktop-container #img-feature-old-is-obselete{
+        height: 330px !important;
+        width: 358px !important;
+    }
+    
+    #desktop-container #img-feature-time-cannot-be-bought{
+        margin-left: -3rem !important;
+        height: 320px !important;
+        width: 420px !important;
+    }
+    
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    #desktop-container #img-feature-magical-ui{
+        height: 200px !important;
+        width: 380px !important;
+    }
+
+    #desktop-container #img-feature-security{
+        height: 350px !important;
+        width: 245px !important;
+    }
+
+    #desktop-container #img-feature-old-is-obselete{
+        height: 330px !important;
+        width: 358px !important;
+    }
+    
+    #desktop-container #img-feature-time-cannot-be-bought{
+        margin-left: -6rem !important;
+        height: 290px !important;
+        width: 410px !important;
+    }
+
+    #desktop-container .card-container{
+        width: 15rem !important;        
+    }
+
+    #desktop-container #img-card-front-web-dev,
+    #desktop-container #img-card-front-app-dev,
+    #desktop-container #img-card-front-erp,
+    #desktop-container #img-card-back-web-dev,
+    #desktop-container #img-card-back-app-dev,
+    #desktop-container #img-card-back-erp {
+        padding: 30px;
+        width: 310px;
+    }
+    #desktop-container #backdrop {
+        height: 80% !important;
+    }
+    #desktop-container #space-filler {
+        height: 80vh;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    #desktop-container #img-feature-magical-ui{
+        height: 155px !important;
+        width: 330px !important;
+    }
+
+    #desktop-container #img-feature-security{
+        height: 300px !important;
+        width: 185px !important;
+    }
+
+    #desktop-container #img-feature-old-is-obselete{
+        height: 290px !important;
+        width: 318px !important;
+    }
+    
+    #desktop-container #img-feature-time-cannot-be-bought{
+        margin-left: -2.5rem !important;
+        height: 250px !important;
+        width: 360px !important;
+    }
+
+    #desktop-container .card-container{
+        width: 18rem !important;        
+    }
+
+    #desktop-container #img-card-front-web-dev,
+    #desktop-container #img-card-front-app-dev,
+    #desktop-container #img-card-front-erp,
+    #desktop-container #img-card-back-web-dev,
+    #desktop-container #img-card-back-app-dev,
+    #desktop-container #img-card-back-erp {
+        padding: 30px !important;
+        width: 290px !important;
+        height: 250px !important;
+    }
+    #desktop-container #backdrop {
+        height: 80% !important;
+    }
+    #desktop-container #space-filler {
+        height: 80vh !important;
+    }
+
+
+}
+
+/* 1000 < Media Queries < 1500 Ends */

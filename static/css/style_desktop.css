@@ -279,8 +279,8 @@
 
 #desktop-container #signup-form-open-close-icon{
     border-radius: 50%;
-    height: 5.2vh;
-    width: 2.8vw;
+    height: 45px;
+    width: 45px;
     border-style: none;
     color: #fff;
     /* animation: 1s infinite animateButton; */
@@ -292,5 +292,4 @@
     width: 160px; 
     margin-top: 30%;
 }
-
 /* Signup Form Section Ends */
