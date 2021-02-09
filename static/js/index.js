@@ -2,12 +2,15 @@ $(document).ready(() => {
     appearOnScroll();
     slideOwlCarousel();
     setTimeout(() => {
-        appearSignupForm();
-    }, 7000);
+        appearSignupFormDesktop();
+        appearSignupFormMobile();
+    }, 1000);
     automaticAppearSignupFormTimer = setTimeout(() => {
-        automaticAppearSignupForm()
+        automaticAppearSignupFormDesktop();
+        automaticAppearSignupFormMobile();
     }, 20000);
-    manageSignupForm();
+    manageSignupFormDesktop();
+    manageSignupFormMobile();
 })
 
 const rotateCard = (obj,string,view) => {
@@ -102,23 +105,23 @@ const slideOwlCarousel = () => {
     });
 }
 
-const automaticAppearSignupForm = () => {
-    var signup_form_section = $('#signup-form');
-    var signup_form_open_close_icon = $('#signup-form-open-close-icon');
+const automaticAppearSignupFormDesktop = () => {
+    var signup_form_section = $('#desktop-container #signup-form');
+    var signup_form_open_close_icon = $('#desktop-container #signup-form-open-close-icon');
 
     signup_form_section.animate({ bottom: '0px' }, 1000);
     signup_form_open_close_icon.html('<i class="fa fa-angle-down" aria-hidden="true"></i>');
 
 }
 
-const appearSignupForm = () => {
-    var signup_form_section = $('#signup-form');
+const appearSignupFormDesktop = () => {
+    var signup_form_section = $('#desktop-container #signup-form');
     signup_form_section.animate({ bottom: '-390px' }, 'slow');
 }
 
-const manageSignupForm = () => {
-    var signup_form_section = $('#signup-form');
-    var signup_form_open_close_icon = $('#signup-form-open-close-icon');
+const manageSignupFormDesktop = () => {
+    var signup_form_section = $('#desktop-container #signup-form');
+    var signup_form_open_close_icon = $('#desktop-container #signup-form-open-close-icon');
 
     signup_form_open_close_icon.click(() => {
         clearTimeout(automaticAppearSignupFormTimer);
@@ -131,6 +134,49 @@ const manageSignupForm = () => {
         } else {
             signup_form_section.css('bottom', '-390px');
             signup_form_open_close_icon.html('<i class="fa fa-angle-up" aria-hidden="true"></i>');
+        }
+
+    })
+}
+
+const automaticAppearSignupFormMobile = () => {
+    var signup_form_section = $('#mobile-container #signup-form');
+    var signup_form_open_close_icon = $('#mobile-container #signup-form-open-close-icon');
+    var signup_form_extension_right = $('#mobile-container .signup-form-extension-right');
+    var signup_form_header = $('#mobile-container .signup-form-header');
+
+    signup_form_section.animate({ left: '0px' }, 1000);
+    signup_form_open_close_icon.html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+    signup_form_extension_right.css('background-color','rgb(233, 245, 250)');
+    signup_form_header.css('border-bottom-right-radius','0px');
+}
+
+const appearSignupFormMobile = () => {
+    var signup_form_section = $('#mobile-container #signup-form');
+    signup_form_section.animate({ left: '-230px' }, 'slow');
+}
+
+const manageSignupFormMobile = () => {
+    var signup_form_section = $('#mobile-container #signup-form');
+    var signup_form_open_close_icon = $('#mobile-container #signup-form-open-close-icon');
+    var signup_form_extension_right = $('#mobile-container .signup-form-extension-right');
+    var signup_form_header = $('#mobile-container .signup-form-header');
+
+    signup_form_open_close_icon.click(() => {
+        clearTimeout(automaticAppearSignupFormTimer);
+        var current_left_value = signup_form_section.css('left');
+        current_left_value = parseInt(current_left_value.split('px')[0]);
+
+        if (current_left_value < 0) {
+            signup_form_section.css('left', '0px');
+            signup_form_open_close_icon.html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+            signup_form_extension_right.css('background-color','rgb(233, 245, 250)');
+            signup_form_header.css('border-bottom-right-radius','0px');
+        } else {
+            signup_form_section.css('left', '-230px');
+            signup_form_open_close_icon.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+            signup_form_extension_right.css('background-color','transparent');
+            signup_form_header.css('border-bottom-right-radius','15px');
         }
 
     })
@@ -176,10 +222,17 @@ const sendRequest = (name, email, contact_number) => {
     });
 }
 
-const submitForm = () => {
-    var signup_name = $('#signup-name').val()
-    var signup_email = $('#signup-email').val()
-    var signup_contact_number = $('#signup-contact-number').val()
+const submitForm = (device) => {
+
+    if (device === 'desktop'){
+        var signup_name = $('#signup-name-desktop').val()
+        var signup_email = $('#signup-email-desktop').val()
+        var signup_contact_number = $('#signup-contact-number-desktop').val()
+    }else{
+        var signup_name = $('#signup-name-mobile').val()
+        var signup_email = $('#signup-email-mobile').val()
+        var signup_contact_number = $('#signup-contact-number-mobile').val()
+    }
 
     data_is_valid = validateFormData(
         signup_name,
