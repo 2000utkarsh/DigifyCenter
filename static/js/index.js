@@ -267,3 +267,20 @@ const submitForm = (device) => {
 
 
 }
+
+const smoothScroll = (id, direction) => {
+
+    
+    if (direction === 'bottom') {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - 100
+        }, 800);
+    }
+    else {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    }
+
+
+}
