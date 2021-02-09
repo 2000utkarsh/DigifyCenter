@@ -4,7 +4,7 @@ $(document).ready(() => {
     setTimeout(() => {
         appearSignupFormDesktop();
         appearSignupFormMobile();
-    }, 1000);
+    }, 7000);
     automaticAppearSignupFormTimer = setTimeout(() => {
         automaticAppearSignupFormDesktop();
         automaticAppearSignupFormMobile();

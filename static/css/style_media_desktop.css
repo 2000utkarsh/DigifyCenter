@@ -1,4 +1,4 @@
-/* 1000 < Media Queries < 1500 Starts */
+/* 1000px < Media Queries < 1500px Starts */
 
 @media only screen and (min-width: 1400px) and (max-width: 1500px) {
     #desktop-container #img-feature-magical-ui{
@@ -128,4 +128,4 @@
 
 }
 
-/* 1000 < Media Queries < 1500 Ends */
+/* 1000px < Media Queries < 1500px Ends */

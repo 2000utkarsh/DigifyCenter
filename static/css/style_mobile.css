@@ -1,7 +1,8 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     #desktop-container {
         display: none;
     }
+    
     #mobile-container {
         display: block;
     }
