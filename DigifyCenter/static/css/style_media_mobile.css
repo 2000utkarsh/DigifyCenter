@@ -1,0 +1,1308 @@
+/* Media Queries < 1000px Starts */
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: 20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: 20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 40%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden{
+        margin-bottom: 100px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 100px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 110px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: 20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: 20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 40%;
+        }
+    }
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 100px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 110px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: 20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: 20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 40%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 60px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 90px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: 20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: 20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 40%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 60px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 80px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: 5%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: 5%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 20%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 70px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 50px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 80px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -10%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -10%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 15%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 30px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 80px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -10%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -10%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 15%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .card-container{
+        width: 18.5rem !important;
+    }
+    
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 30px;
+        height: 15.75rem;
+        width: 18.5rem !important;
+    }
+
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 19rem !important;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 18rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 14rem;
+        width: 15.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 14rem;
+        width: 17.9rem;
+        padding: 1rem;
+    }
+
+    #mobile-container .features-row-sub-heading{
+        font-size: 1.1rem;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 570px !important; 
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 700px !important;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 600px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 650px;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 50px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 70px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -10%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -10%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 15%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .card-container{
+        width: 18.5rem !important;
+    }
+    
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 30px;
+        height: 15.75rem;
+        width: 18.5rem !important;
+    }
+
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 19rem !important;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 18rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 14rem;
+        width: 15.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 14rem;
+        width: 17.9rem;
+        padding: 1rem;
+    }
+
+    #mobile-container .features-row-sub-heading{
+        font-size: 1.1rem;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 570px !important; 
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 700px !important;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 600px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 650px;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 80px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 50px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 70px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: 10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: -10%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .card-container{
+        width: 18.5rem !important;
+    }
+    
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 30px;
+        height: 15.75rem;
+        width: 18.5rem !important;
+    }
+
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 19rem !important;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 18rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 14rem;
+        width: 15.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 14rem;
+        width: 17.9rem;
+        padding: 1rem;
+    }
+
+    #mobile-container .features-row-sub-heading{
+        font-size: 1.1rem;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 570px !important; 
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 700px !important;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 600px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 650px;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 60px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 35px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 50px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+
+    #mobile-container #services {
+        height: 1900px;
+    }
+
+    #mobile-container .service-heading,
+    #mobile-container .feature-heading,
+    #mobile-container .testimonial-heading{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 300px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -20%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: 10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -20%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: -10%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .card-container{
+        width: 16.5rem !important;
+    }
+    
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 30px;
+        height: 15.75rem;
+        width: 16.5rem !important;
+    }
+
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-erp {
+        height: 13.75rem;
+    }
+
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 17rem !important;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 18rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 14rem;
+        width: 15.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 14rem;
+        width: 16.9rem;
+        padding: 1rem;
+    }
+
+    #mobile-container .features-row-sub-heading{
+        font-size: 1.1rem;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 580px !important; 
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 750px !important;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 620px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 650px;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 60px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 35px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 50px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+
+    #mobile-container #services {
+        height: 1900px;
+    }
+
+    #mobile-container .service-heading,
+    #mobile-container .feature-heading,
+    #mobile-container .testimonial-heading{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 250px) {
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        left: -35%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        width: 398px;
+        height: 436px;
+        left: 0px;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #mobile-container #space-filler {
+        height: 50vh;
+    }
+
+    
+    
+    @keyframes animation-bottom-to-top{
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: 10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -35%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: -30%;
+        }
+    }
+
+    
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        margin-top: 20px !important;
+    }
+
+    #mobile-container .card-container{
+        width: 13rem !important;
+    }
+    
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 20px;
+        height: 11.75rem;
+        width: 13rem !important;
+    }
+
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-erp {
+        height: 10.75rem;
+    }
+
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 13rem !important;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 18rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 14rem;
+        width: 13rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 14rem;
+        width: 13rem;
+        padding: 1rem;
+    }
+
+    #mobile-container .features-row-sub-heading{
+        font-size: 1.1rem;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 680px !important; 
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 830px !important;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 720px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 820px;
+    }
+
+    #mobile-container .feature-text-hidden.expand-magical-ui {
+        margin-bottom: 60px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-security {
+        margin-bottom: 35px !important;
+    }
+    
+    #mobile-container .feature-text-hidden.expand-old-is-obselete {
+        margin-bottom: 50px !important;
+    }
+
+    #mobile-container .feature-text-hidden.expand-time-cannot-be-bought {
+        margin-bottom: 90px !important;
+    }
+
+    #mobile-container #services {
+        height: 1900px;
+    }
+
+    #mobile-container .service-heading,
+    #mobile-container .feature-heading,
+    #mobile-container .testimonial-heading{
+        font-size: 1.2rem;
+    }
+    #mobile-container #signup-form {
+        height: 460px;
+        width: 245px;        
+        top: 180px;
+        left: -250px;
+    }
+}
+
+/* Media Queries < 1000px Ends */

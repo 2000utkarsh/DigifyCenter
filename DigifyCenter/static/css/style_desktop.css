@@ -1,0 +1,304 @@
+/* Backdrop Styling Starts */
+#desktop-container #backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+
+}
+
+#desktop-container #box1 {
+    width: 530px;
+    height: 625px;
+    background-image: url("../imgs/img-3.png");
+    position: relative;
+    bottom: -100%;
+    left: 30%;
+    animation: animation-bottom-to-top 2s forwards, 
+               animation-left-to-right 3s forwards 3s;
+}
+
+#desktop-container #box1:after {
+    content: '';
+    position: absolute;
+    width: 530px;
+    height: 625px;
+    background-image: url("../imgs/img-2.png");
+    left: 0px;
+    z-index: -1;
+
+}
+
+#desktop-container #box2 {
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 6em;
+    font-weight: 500;
+    line-height: 130px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    overflow: hidden;
+}
+
+#desktop-container #backdrop-text {
+    position: relative;
+    left: -100%;
+    animation: animation-text-left-to-right 2s forwards 3s;
+    font-size: 4.2rem;
+    line-height: 5rem;
+}
+
+@keyframes animation-bottom-to-top {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: -10%;
+    }
+}
+
+@keyframes animation-left-to-right {
+    from {
+        left: 30%;
+        width: 530px;
+    }
+
+    to {
+        width: 0px;
+        left: 50%;
+    }
+}
+
+@keyframes animation-text-left-to-right {
+    from {
+        left: -100%;
+
+    }
+
+    to {
+
+        left: 0%;
+    }
+}
+
+#desktop-container .backdrop-triangle-left {
+    animation: slide 3s forwards;
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position: absolute;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+#desktop-container .backdrop-triangle-right {
+    animation: slide2 3s forwards;
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position: absolute;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+@keyframes slide {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: -150%;
+    }
+  }
+
+@keyframes slide2 {
+    0% {
+      right: -50%;
+    }
+    100% {
+      right: -150%;
+    }
+  }
+
+#desktop-container #space-filler {
+    height: 100vh;
+    background-color: transparent;
+}
+/* Backdrop Styling Ends */
+
+
+/* Services Section Styling Starts */
+#desktop-container #services {
+    padding-top: 1.5rem;
+    height: 750px;
+}
+
+#desktop-container .card-container:hover {
+    transition: transform 1s !important;
+    transform: scale(1.03, 1.03) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+
+}
+
+#desktop-container .card-container{
+	position: relative;
+    width: 22rem;
+    margin-bottom: 1.5rem;
+}
+
+#desktop-container .card-back, #desktop-container .card-front {
+    border-radius: 1rem;
+    height: 580px;
+}
+
+#desktop-container .card-back{
+    transform: rotateY(180deg);
+}
+
+#desktop-container .card-service-desktop{
+	position: absolute;
+	transition: all 0.9s;
+	backface-visibility: hidden;
+}
+
+#desktop-container .card-back .card-body{
+	position: relative;
+}
+
+#desktop-container #img-card-front-web-dev,
+#desktop-container #img-card-front-app-dev,
+#desktop-container #img-card-front-erp,
+#desktop-container #img-card-back-web-dev,
+#desktop-container #img-card-back-app-dev,
+#desktop-container #img-card-back-erp {
+    padding: 30px;
+    height: 300px;
+    width: 365px;
+}
+
+#desktop-container #img-card-back-web-dev {
+    padding-bottom: 20px;
+    height: 260px;
+}
+
+#desktop-container #img-card-back-app-dev {
+    padding-bottom: 20px;
+    height: 260px;
+}
+
+#desktop-container #img-card-back-erp {
+    padding-bottom: 20px;
+    height: 260px;
+}
+/* Services Section Styling Ends */
+
+/* Features Section Styling Starts */
+#desktop-container #img-feature-magical-ui {
+    height: 270px;
+    width: 530px;
+}
+#desktop-container #img-feature-security {
+    height: 400px;
+    width: 280px;
+}
+#desktop-container #img-feature-old-is-obselete{
+    height: 350px;
+    width: 380px;
+}
+#desktop-container #img-feature-time-cannot-be-bought{
+    margin-left: -5rem;
+    height: 350px;
+    width: 460px;
+}
+
+#desktop-container .features-row {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-in, opacity 1s;
+
+}
+
+#desktop-container .features-row.appear {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#desktop-container .features-row-sub-heading {
+    display: block;
+}
+/* Features Section Styling Ends */
+
+
+/* Testimonials Section Styling Starts */
+#desktop-container .testimonial-card {
+    background: transparent;
+    border: none;
+}
+
+#desktop-container .testimonial-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#desktop-container .testimonial-img:hover {
+    transition: transform 1s;
+    transform: scale(1.13, 1.13);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+#desktop-container .service-heading,
+#desktop-container .feature-heading,
+#desktop-container .testimonial-heading{
+    letter-spacing: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Testimonials Section Styling Ends */
+
+
+/* Signup Form Section Starts */
+#desktop-container #signup-form {
+    height: 450px;
+    width: 375px;
+    position: fixed;
+    right: 20px;
+    bottom: -500px;
+    z-index: 10;
+}
+
+#desktop-container #signup-form > .container {
+    height: 100%;
+    border-radius: 15px;
+}
+
+#desktop-container .signup-form-header {
+    height: 8vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#desktop-container #signup-form-open-close-icon{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border-style: none;
+    color: #fff;
+    /* animation: 1s infinite animateButton; */
+}
+
+#desktop-container .img-form-success {
+    display:none; 
+    height: 120px; 
+    width: 160px; 
+    margin-top: 30%;
+}
+
+/* Signup Form Section Ends */
+
+

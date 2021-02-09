@@ -1,0 +1,310 @@
+@media only screen and (max-width: 1000px) {
+    #desktop-container {
+        display: none;
+    }
+    
+    #mobile-container {
+        display: block;
+    }
+    
+    /* Backdrop Styling Starts */
+    #mobile-container #backdrop {
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        overflow: hidden;
+        z-index: -2;
+
+    }
+
+    #mobile-container #box1 {
+        width: 398px;
+        height: 436px;
+        background-image: url("../imgs/img-3-mobile.png");
+        position: relative;
+        bottom: -100%;
+        left: -15%;
+        animation: animation-bottom-to-top 2s forwards, 
+                animation-left-to-right 3s forwards 3s;
+    }
+
+    #mobile-container #box1:after {
+        content: '';
+        position: absolute;
+        width: 398px;
+        height: 436px;
+        background-image: url("../imgs/img-2-mobile.png");
+        left: 0px;
+        z-index: -1;
+
+    }
+
+    #mobile-container #box2 {
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 6em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+
+    @keyframes animation-bottom-to-top {
+        from {
+            bottom: -100%;
+        }
+
+        to {
+            bottom: -10%;
+        }
+    }
+
+    @keyframes animation-left-to-right {
+        from {
+            left: -15%;
+            width: 530px;
+        }
+
+        to {
+            width: 0px;
+            left: 0%;
+        }
+    }
+
+    @keyframes slide {
+        0% {
+        left: -50%;
+        }
+        100% {
+        left: -150%;
+        }
+    }
+
+    @keyframes slide2 {
+        0% {
+        right: -50%;
+        }
+        100% {
+        right: -150%;
+        }
+    }
+
+    #mobile-container #space-filler {
+        height: 60vh;
+        background-color: transparent;
+    }
+    /* Backdrop Styling Ends */
+
+    /* Services Section Styling Starts */
+    #mobile-container #services {
+        padding-top: 1.5rem;
+        height: 2000px;
+    }
+
+    #mobile-container .card-container {
+        position: relative;
+        width: 21.5rem !important;
+        margin-bottom: 1.5rem;
+    }
+
+    #mobile-container .card-back, #mobile-container .card-front {
+        border-radius: 1rem;
+        height: 580px;
+    }
+
+    #mobile-container .card-back{
+        transform: rotateY(180deg);
+    }
+
+    #mobile-container .card-service-mobile{
+        position: absolute;
+        transition: all 0.9s;
+        backface-visibility: hidden;
+    }
+
+    #mobile-container .card-back .card-body {
+        position: relative;
+    }
+
+    #mobile-container .service-card-column {
+        height: 600px;
+    }
+
+    #mobile-container #img-card-front-web-dev,
+    #mobile-container #img-card-front-app-dev,
+    #mobile-container #img-card-front-erp,
+    #mobile-container #img-card-back-web-dev,
+    #mobile-container #img-card-back-app-dev,
+    #mobile-container #img-card-back-erp {
+        padding: 30px;
+        height: 18.75rem;
+        width: 21.5rem;
+    }
+
+    #mobile-container #img-card-back-web-dev {
+        padding-bottom: 20px;
+        height: 16.25rem;
+    }
+
+    #mobile-container #img-card-back-app-dev {
+        padding-bottom: 20px;
+        height: 16.25rem;
+    }
+
+    #mobile-container #img-card-back-erp {
+        padding-bottom: 20px;
+        height: 16.25rem;
+    }
+    /* Services Section Styling Ends */
+
+    /* Features Section Styling Starts */
+    #mobile-container .card-feature-mobile{
+        transition: all 0.9s;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+    }
+
+    #mobile-container .feature-card-column {
+        height: 700px;
+    }
+
+    #mobile-container .feature-card-column-magical-ui {
+        height: 550px;
+    }
+
+    #mobile-container .feature-card-column-security {
+        height: 710px;
+    }
+
+    #mobile-container .feature-card-column-old-is-obselete {
+        height: 630px;
+    }
+
+    #mobile-container .feature-card-column-time-cannot-be-bought {
+        height: 630px;
+    }
+
+    #mobile-container .feature-text-hidden {
+        visibility: hidden;
+    }
+
+    #mobile-container #img-card-magical-ui {
+        height: 11.5rem;
+        width: 22rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    #mobile-container #img-card-security {
+        height: 20rem;
+        width: 14rem;
+        padding: 1rem;
+    }
+
+    #mobile-container #img-card-old-is-obselete {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+    
+    #mobile-container #img-card-time-cannot-be-bought {
+        height: 16rem;
+        width: 20.9rem;
+        padding: 1rem;
+    }
+    /* Features Section Styling Ends */
+    
+    
+    /* Testimonials Section Styling Starts */
+    #mobile-container #testimonials {
+        padding-top: 2rem;
+    }
+
+    #mobile-container .testimonial-card {
+        margin-top: 1rem;
+        background: transparent;
+        border: none;
+    }
+    
+    #mobile-container .testimonial-img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    /* Testimonials Section Styling Ends */
+
+
+    /* Footer Styling Starts */
+    #mobile-container footer {
+        padding-bottom: 8rem;
+    }
+    /* Footer Styling Ends */
+
+    /* Signup Form Section Starts */    
+    #mobile-container #signup-form {
+        height: 460px;
+        width: 275px;
+        position: fixed;
+        top: 225px;
+        left: -280px;
+        z-index: 10;
+    }
+    
+    #mobile-container #signup-form > .container {
+        height: 100%;
+        border-radius: 15px;
+    }
+    
+    #mobile-container .signup-form-header {
+        height: 65px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    #mobile-container #signup-form-open-close-icon{
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        border-style: none;
+        color: #fff;
+        margin-right: 4px;
+    }
+    
+    #mobile-container .img-form-success {
+        display:none; 
+        height: 120px; 
+        width: 160px; 
+        margin-top: 30%;
+    }
+    
+    #mobile-container .signup-form-extension-left,
+    #mobile-container .signup-form-extension-middle{
+        background-color: rgb(233, 245, 250);
+        padding: 0;
+    }
+    
+    #mobile-container .signup-form-extension-right{
+        height: 395px;
+        background-color: transparent;
+        
+    }
+    
+    #mobile-container .signup-form-label-name,
+    #mobile-container .signup-form-label-email,
+    #mobile-container .signup-form-label-contact-number{
+    
+        font-size: 0.8rem;
+    }
+    
+
+    #mobile-container .signup-form-header-extension{
+        padding: 0;
+    }
+    
+    /* Signup Form Section Ends */    
+}
+
