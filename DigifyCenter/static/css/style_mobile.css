@@ -125,15 +125,46 @@
         backface-visibility: hidden;
     }
 
-    #mobile-container .card-back .card-body {
-        position: relative;
-    }
+    
 
     #mobile-container .service-card-column {
-        height: 600px;
+        min-height: 600px;
+    }
+    #mobile-container .service-card-column-1 {
+        min-height: 600px;
+    }
+    #mobile-container .service-card-column-2 {
+        min-height: 600px;
+    }
+    #mobile-container .service-card-column-3 {
+        min-height: 600px;
+    }
+    #mobile-container .space-filler-2{
+        height: 200px;
+        display: none;
     }
 
-    #mobile-container #img-card-front-web-dev,
+    #mobile-container .card-list-1,
+    #mobile-container .card-list-2,
+    #mobile-container .card-list-3{
+        opacity: 0;
+        height: 0px;
+    }
+
+    .card-list-animation{
+        height: 100px;
+        animation: card-list-animation-slide 2s forwards !important;
+    }
+    @keyframes card-list-animation-slide {
+    0% {
+      height: 100px;
+    }
+    100% {      
+      height: 250px;
+        }       
+    }
+        
+        #mobile-container #img-card-front-web-dev,
     #mobile-container #img-card-front-app-dev,
     #mobile-container #img-card-front-erp,
     #mobile-container #img-card-back-web-dev,

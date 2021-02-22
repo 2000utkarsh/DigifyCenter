@@ -1,13 +1,14 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digify Center</title>
 
     <!-- Link Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <!-- Link Owl Carousel CSS -->
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <!-- Link Google Font CSS -->
@@ -31,35 +32,31 @@
     <script src="{% static 'js/index.js' %}"></script>
 
 </head>
+
 <body>
-    
+
     <!-- Navbar Starts -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top dc-bg-dark">
         <a class="navbar-brand" href="{% url 'app:get_details' %}">Digify Center</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a 
-                        class="nav-link" 
-                        href="{% url 'app:get_details' %}">
+                    <a class="nav-link" href="{% url 'app:get_details' %}">
                         Home <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)"
-                        onclick="smoothScroll('#services','bottom')">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#services','bottom')">
                         Services
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)"
-                        onclick="smoothScroll('#features','bottom')">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#features','bottom')">
                         Features
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)"
-                        onclick="smoothScroll('#testimonials','bottom')">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#testimonials','bottom')">
                         Testimonials
                     </a>
                 </li>
@@ -98,9 +95,9 @@
                         <center>
                             <div class="card-container">
                                 <div class="card card-front shadow services-card card-service-desktop">
-                                    <div
-                                        class="card-service-img-div">
-                                        <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top" id="img-card-front-web-dev" alt="..." >
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top"
+                                            id="img-card-front-web-dev" alt="...">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Website Development</h5>
@@ -112,20 +109,21 @@
                                                     you say, just as you want!</b></em>
                                         </p>
                                     </div>
-    
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-1"
-                                            onclick="rotateCard(this,'front','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
+                                            onclick="rotateCard(this,'front','desktop')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
                                                 More</a></button>
-    
+
                                     </div>
                                 </div>
                                 <div class="card card-back shadow services-card card-service-desktop">
-    
+
                                     <div>
-                                        <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top" alt="..." id="img-card-back-web-dev" >
+                                        <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top" alt="..."
+                                            id="img-card-back-web-dev">
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Breathtaking Aesthetics
@@ -136,50 +134,53 @@
                                             content</li>
                                         <li class="list-group-item">Data Storage Facility</li>
                                     </ul>
-    
-    
+
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-1"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
+                                            onclick="rotateCard(this,'back','desktop')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
                                                 Less</a></button>
-    
-    
+
+
                                     </div>
                                 </div>
                             </div>
                         </center>
                     </div>
-    
+
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                         <center>
                             <div class="card-container">
                                 <div class="card card-front shadow services-card card-service-desktop">
                                     <div class="card-service-img-div">
-                                        <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top" id="img-card-front-app-dev" alt="..." >
+                                        <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top"
+                                            id="img-card-front-app-dev" alt="...">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Application Development</h5>
                                         <p class="card-text">Android? iOS? Confused? <br> Worry no more. Get your
                                             application
-                                            flawlessly done in a blink, right here. <br><b><em>Just as you say, just as you
+                                            flawlessly done in a blink, right here. <br><b><em>Just as you say, just as
+                                                    you
                                                     want!</b></em></p>
                                     </div>
-    
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-2"
-                                            onclick="rotateCard(this, 'front','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
+                                            onclick="rotateCard(this, 'front','desktop')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
                                                 More</a></button>
-    
+
                                     </div>
                                 </div>
                                 <div class="card card-back shadow services-card card-service-desktop">
-    
+
                                     <div>
-                                        <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top" alt="..." id="img-card-back-app-dev">
+                                        <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top" alt="..."
+                                            id="img-card-back-app-dev">
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Stunning Visuals</li>
@@ -190,20 +191,20 @@
                                         <li class="list-group-item">User Hierarchy Control</li>
                                         <li class="list-group-item">Clear Privacy Policies</li>
                                     </ul>
-    
-    
+
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-2"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
+                                            onclick="rotateCard(this,'back','desktop')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
                                                 Less</a></button>
-    
-    
+
+
                                     </div>
                                 </div>
                             </div>
-    
+
                         </center>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
@@ -211,29 +212,33 @@
                             <div class="card-container">
                                 <div class="card card-front shadow services-card card-service-desktop">
                                     <div class="card-service-img-div">
-                                        <img src="{% static 'imgs/erp.png' %}" class="card-img-top" id="img-card-front-erp" alt="...">
+                                        <img src="{% static 'imgs/erp.png' %}" class="card-img-top"
+                                            id="img-card-front-erp" alt="...">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">ERP Solutions</h5>
-                                        <p class="card-text">Too tired of handling your business alone ? <br> Get some quick
-                                            digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just as
+                                        <p class="card-text">Too tired of handling your business alone ? <br> Get some
+                                            quick
+                                            digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just
+                                                    as
                                                     you
                                                     say, just as you
                                                     want!</b></em></p>
                                     </div>
-    
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-3"
-                                            onclick="rotateCard(this,'front','desktop')" ><a href="javascript:void(0)"
+                                            onclick="rotateCard(this,'front','desktop')"><a href="javascript:void(0)"
                                                 class="card-link text-white">Know More</a></button>
-    
+
                                     </div>
                                 </div>
                                 <div class="card card-back shadow services-card card-service-desktop">
-    
+
                                     <div>
-                                        <img src="{% static 'imgs/erp.png' %}" class="card-img-top" alt="..." id="img-card-back-erp">
+                                        <img src="{% static 'imgs/erp.png' %}" class="card-img-top" alt="..."
+                                            id="img-card-back-erp">
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Extremely Scalable</li>
@@ -245,23 +250,23 @@
                                             Channels</li>
                                         <li class="list-group-item">Nominal Pricing</li>
                                     </ul>
-    
-    
+
+
                                     <div class="card-body">
-    
+
                                         <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-3"
-                                            onclick="rotateCard(this,'back','desktop')"><a
-                                                href="javascript:void(0)" class="card-link text-white">Know
+                                            onclick="rotateCard(this,'back','desktop')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
                                                 Less</a></button>
-    
-    
+
+
                                     </div>
                                 </div>
                             </div>
                         </center>
                     </div>
-    
-    
+
+
                 </div>
             </div>
         </section>
@@ -281,45 +286,49 @@
                         <h4 class='features-row-sub-heading'>Because it feels like magic...
                         </h4>
                         <p class="text-justify features-p">
-    
+
                             No one likes the awfully difficult to navigate software with a million button to choose from
                             where one feels like lost in a never ending labyrinth. We at Digify Center ensure that your
-                            virtual visitors get the easiest interface to explore your software. Easy navigation options,
+                            virtual visitors get the easiest interface to explore your software. Easy navigation
+                            options,
                             minimalistic design overheads, simple directory structure and eye soothing aesthetics would
                             enable everyone to live your software inside out, just as if it is actually... magic.
-    
-    
+
+
                         </p>
-    
+
                     </div>
                     <div class="col-4 align-self-center">
                         <center>
-                            <img src="{% static 'imgs/magical-ui.png' %}" alt=""
-                                class="magical-ui" id="img-feature-magical-ui">
+                            <img src="{% static 'imgs/magical-ui.png' %}" alt="" class="magical-ui"
+                                id="img-feature-magical-ui">
                         </center>
                     </div>
                 </div>
                 <div class="row mt-5 features-row">
                     <div class="col-4 align-self-center">
                         <center>
-                            <img src="{% static 'imgs/security.png' %}" alt=""
-                                class="security" id="img-feature-security">
+                            <img src="{% static 'imgs/security.png' %}" alt="" class="security"
+                                id="img-feature-security">
                         </center>
                     </div>
                     <div class="col-8 align-self-center">
                         <h4 class='features-row-sub-heading'>Because somehow someone's always
                             watching...</h4>
                         <p class="text-justify features-p">
-    
-                            Are you always afraid of a massive data leak? Or someone taking over your admin priviliges? Or
-                            as if someone will just spam and ruin your data records? If yes, then you have come to the right
+
+                            Are you always afraid of a massive data leak? Or someone taking over your admin priviliges?
+                            Or
+                            as if someone will just spam and ruin your data records? If yes, then you have come to the
+                            right
                             place. We at Digify Center, regard high-end data security as a non-negotiable. Be it SQL
                             Injections, cross-site request forgery, phishing attacks, clickjacking, DNS Tunneling,
-                            Man-in-middle attack, authentication failures or malware attacks, we got it all covered for you.
-    
-    
+                            Man-in-middle attack, authentication failures or malware attacks, we got it all covered for
+                            you.
+
+
                         </p>
-    
+
                     </div>
                 </div>
                 <div class="row mt-5 features-row">
@@ -327,23 +336,25 @@
                         <h4 class='features-row-sub-heading'>Because the old is obselete...
                         </h4>
                         <p class="text-justify features-p">
-    
-    
-    
-                            The world is changing rapidly and so are the digital technologies around you. The traditional
+
+
+
+                            The world is changing rapidly and so are the digital technologies around you. The
+                            traditional
                             development platforms and tools are now obselete infront of the fast, stunning, reliable and
                             robust technologies rolling out everyday in the world. We at Digify Center, different from
                             anyone else, have commited to keep up the pace. Our developers have combined their rich
-                            experiences with the latest technologies in trend and are presenting to you the complete package
+                            experiences with the latest technologies in trend and are presenting to you the complete
+                            package
                             of trendy and sturdy.
                         </p>
-    
-    
+
+
                     </div>
                     <div class="col-4 align-self-center">
                         <center>
-                            <img src="{% static 'imgs/img.png' %}" alt=""
-                                class="old-is-obselete" id="img-feature-old-is-obselete">
+                            <img src="{% static 'imgs/img.png' %}" alt="" class="old-is-obselete"
+                                id="img-feature-old-is-obselete">
                         </center>
                     </div>
                 </div>
@@ -358,16 +369,21 @@
                         <h4 class='features-row-sub-heading'>Because who says time cannot be
                             bought...</h4>
                         <p class="text-justify features-p">
-    
-                            Got a lot of HR? or huge stocks in your warehouses? Or some long list of clienten? We understand
-                            that running requires you to manage a lot of things and consumes a lot of your time. But it's
-                            the moment to realise that the time spent in the fundamental bookkeeping prevents one to reach
-                            the greater heights of the success. Digify Center has consistently developed optimum Enterprise
-                            Resource Planning platforms & tools which will record and analyze your business data for you. So
+
+                            Got a lot of HR? or huge stocks in your warehouses? Or some long list of clienten? We
+                            understand
+                            that running requires you to manage a lot of things and consumes a lot of your time. But
+                            it's
+                            the moment to realise that the time spent in the fundamental bookkeeping prevents one to
+                            reach
+                            the greater heights of the success. Digify Center has consistently developed optimum
+                            Enterprise
+                            Resource Planning platforms & tools which will record and analyze your business data for
+                            you. So
                             let it do the boring stuff of you while you climb the everest of your life.
-    
+
                         </p>
-    
+
                     </div>
                 </div>
             </div>
@@ -386,16 +402,17 @@
                     <div class="col-4">
                         <div class="card testimonial-card">
                             <center>
-                                <img src="{% static 'imgs/testimonial_amit.jpeg' %}" class="card-img-top testimonial-img alt="
-                                    ...">
+                                <img src="{% static 'imgs/testimonial_amit.jpeg' %}"
+                                    class="card-img-top testimonial-img alt=" ...">
                                 <div class="card-body">
-    
+
                                     <h5 class="card-title">I.A.S. Kumar Amit</h5>
                                     <h6 class="card-title">Hon'ble Deputy Commissioner Patiala, Punjab</h6>
-    
+
                                     <em>
                                         <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            The intricate design specific to our needs yet extremely easy to interact with
+                                            The intricate design specific to our needs yet extremely easy to interact
+                                            with
                                             <i class="fa fa-quote-right" aria-hidden="true"></i>
                                         </p>
                                     </em>
@@ -406,13 +423,14 @@
                     <div class="col-4">
                         <div class="card testimonial-card">
                             <center>
-                                <img src="{% static 'imgs/testimonial_inayat.jpeg' %}" class="card-img-top testimonial-img"
-                                    alt="...">
+                                <img src="{% static 'imgs/testimonial_inayat.jpeg' %}"
+                                    class="card-img-top testimonial-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">P.C.S. Inayat Gupta</h5>
                                     <h6 class="card-title">Assistant Commissioner <br>Patiala, Punjab</h6>
                                     <em>
-                                        <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i> Received
+                                        <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
+                                            Received
                                             the most personalised software in the least possible time <i
                                                 class="fa fa-quote-right" aria-hidden="true"></i></p>
                                     </em>
@@ -423,13 +441,14 @@
                     <div class="col-4">
                         <div class="card testimonial-card">
                             <center>
-                                <img src="{% static 'imgs/testimonial_harsh.jpg' %}" class="card-img-top testimonial-img"
-                                    alt="...">
+                                <img src="{% static 'imgs/testimonial_harsh.jpg' %}"
+                                    class="card-img-top testimonial-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Harsh Kothari</h5>
                                     <h6 class="card-title">Founder & CEO <br>Har Hath Kalam, India</h6>
                                     <em>
-                                        <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i> The most
+                                        <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i> The
+                                            most
                                             capable developers' organization we ever encountered <i
                                                 class="fa fa-quote-right" aria-hidden="true"></i></p>
                                     </em>
@@ -437,7 +456,7 @@
                             </center>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
             <br><br>
@@ -451,13 +470,13 @@
                     <div class="col-8"></div>
                     <div class="col-4">
                         <center>
-                            <button id="signup-form-open-close-icon" class="mt-3 dc-bg-light"><i
-                                    class="fa fa-angle-up" aria-hidden="true"></i>
+                            <button id="signup-form-open-close-icon" class="mt-3 dc-bg-light"><i class="fa fa-angle-up"
+                                    aria-hidden="true"></i>
                             </button>
                         </center>
                     </div>
                 </div>
-    
+
                 <div class="row mt-3">
                     <div class="col-1"></div>
                     <div class="col-10 align-middle">
@@ -467,19 +486,22 @@
                             </center>
                             <div class="form-group">
                                 <label class="mt-2" for="signup-name">Name</label>
-                                <input class="form-control" type="text" name="signup-name" id="signup-name-desktop" required>
-    
+                                <input class="form-control" type="text" name="signup-name" id="signup-name-desktop"
+                                    required>
+
                                 <label class="mt-3" for="signup-email">Email address</label>
-                                <input class="form-control" type="email" name="signup-email" id="signup-email-desktop" required>
-    
+                                <input class="form-control" type="email" name="signup-email" id="signup-email-desktop"
+                                    required>
+
                                 <label class="mt-3" for="signup-contact-number">Contact Number</label>
-                                <input class="form-control" type="tel" name="signup-contact-number" id="signup-contact-number-desktop" required>
+                                <input class="form-control" type="tel" name="signup-contact-number"
+                                    id="signup-contact-number-desktop" required>
 
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your
                                     details with anyone else.</small>
-    
+
                             </div>
-    
+
                         </form>
                         <center>
                             <button class="btn dc-bg-dark dc-btn submit-btn-signup-form"
@@ -488,16 +510,16 @@
                             </button>
                         </center>
                         <center>
-                            <img src="./static/imgs/green-tick.png" alt=""
-                                class="img-form-success align-middle">
+                            <img src="./static/imgs/green-tick.png" alt="" class="img-form-success align-middle">
                         </center>
-                        <h6 class="form-validation-warning text-red" style="display: none;">Invalid Credentials. Kindly check again!</h6>
+                        <h6 class="form-validation-warning text-red" style="display: none;">Invalid Credentials. Kindly
+                            check again!</h6>
                     </div>
                     <div class="col-1"></div>
                 </div>
-    
+
             </div>
-    
+
         </section>
         <!-- Signup form section ends -->
 
@@ -507,14 +529,17 @@
                 <div class="row align-self-center pt-5">
                     <div class="col-4">
                         <h2 class="text-white">About</h2>
-                        <p class="text-white text-justify">The skilled and experienced designers, developers, marketeers,
-                            innovators and advisors, all under one roof. We aim at simplifying the process of merging the
+                        <p class="text-white text-justify">The skilled and experienced designers, developers,
+                            marketeers,
+                            innovators and advisors, all under one roof. We aim at simplifying the process of merging
+                            the
                             physical and virtual worlds precisely catering to user needs. Customer satisfaction is our
-                            priority and nothing matters to us more than your approval. Working for you, <b>Just as you say,
+                            priority and nothing matters to us more than your approval. Working for you, <b>Just as you
+                                say,
                                 just as you want!</b></p>
                     </div>
                     <div class="col-5">
-    
+
                     </div>
                     <div class="col-3">
                         <h2 class="text-white">Contact Us</h2>
@@ -524,7 +549,7 @@
                     </div>
                 </div>
             </div>
-    
+
         </footer>
         <!-- Footer Ends -->
     </div>
@@ -549,41 +574,26 @@
                     <h3 class="dc-color-dark service-heading">What's in Store for You...</h3>
                 </center>
                 <div class="row mt-4 row-card">
-                    
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card card-front shadow services-card card-service-mobile">
-                                        <div
-                                            class="card-service-img-div">
-                                            <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top" id="img-card-front-web-dev" alt="..." >
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Website Development</h5>
-                                            <p class="card-text">Craving for some online presence? <br>Get quality
-                                                websites.
-                                                Stunning looks and breathtaking features all at one place.
-                                                <br><b><em>Just
-                                                        as
-                                                        you say, just as you want!</b></em>
-                                            </p>
-                                        </div>
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-1"
-                                                onclick="rotateCard(this,'front','mobile')"><a
-                                                    href="javascript:void(0)" class="card-link text-white">Know
-                                                    More</a></button>
-        
-                                        </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column-1 ">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow services-card card-service-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top"
+                                            id="img-card-front-web-dev" alt="...">
                                     </div>
-                                    <div class="card card-back shadow services-card card-service-mobile">
-        
-                                        <div>
-                                            <img src="{% static 'imgs/web-dev.png' %}" class="card-img-top" alt="..." id="img-card-back-web-dev" >
-                                        </div>
-                                        <ul class="list-group list-group-flush">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Website Development</h5>
+                                        <p class="card-text card-text-1">Craving for some online presence? <br>Get
+                                            quality
+                                            websites.
+                                            Stunning looks and breathtaking features all at one place.
+                                            <br><b><em>Just
+                                                    as
+                                                    you say, just as you want!</b></em>
+                                        </p>
+                                        <ul class="list-group list-group-flush card-list-1">
                                             <li class="list-group-item">Breathtaking Aesthetics
                                             </li>
                                             <li class="list-group-item">Admin Dashboard</li>
@@ -592,52 +602,38 @@
                                                 content</li>
                                             <li class="list-group-item">Data Storage Facility</li>
                                         </ul>
-        
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-1"
-                                                onclick="rotateCard(this,'back','mobile')"><a
-                                                    href="javascript:void(0)" class="card-link text-white">Know
-                                                    Less</a></button>
-        
-        
-                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-1"
+                                            onclick="animateServiceCard(this,'front','mobile')"><a
+                                                href="javascript:void(0)" class="card-link text-white">Know
+                                                More</a></button>
+
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                    
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card card-front shadow services-card card-service-mobile">
-                                        <div class="card-service-img-div">
-                                            <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top" id="img-card-front-app-dev" alt="..." >
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Application Development</h5>
-                                            <p class="card-text">Android? iOS? Confused? <br> Worry no more. Get your
-                                                application
-                                                flawlessly done in a blink, right here. <br><b><em>Just as you say, just as you
-                                                        want!</b></em></p>
-                                        </div>
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-2"
-                                                onclick="rotateCard(this, 'front','mobile')"><a
-                                                    href="javascript:void(0)" class="card-link text-white">Know
-                                                    More</a></button>
-        
-                                        </div>
+
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column-2">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow services-card card-service-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top"
+                                            id="img-card-front-app-dev" alt="...">
                                     </div>
-                                    <div class="card card-back shadow services-card card-service-mobile">
-        
-                                        <div>
-                                            <img src="{% static 'imgs/app-dev.png' %}" class="card-img-top" alt="..." id="img-card-back-app-dev">
-                                        </div>
-                                        <ul class="list-group list-group-flush">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Application Development</h5>
+                                        <p class="card-text card-text-2">Android? iOS? Confused? <br> Worry no more. Get your
+                                            application
+                                            flawlessly done in a blink, right here. <br><b><em>Just as you say, just as
+                                                    you
+                                                    want!</b></em></p>
+                                        <ul class="list-group list-group-flush card-list-2">
                                             <li class="list-group-item">Stunning Visuals</li>
                                             <li class="list-group-item">iOS & Android Compatible
                                             </li>
@@ -646,53 +642,40 @@
                                             <li class="list-group-item">User Hierarchy Control</li>
                                             <li class="list-group-item">Clear Privacy Policies</li>
                                         </ul>
-        
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-2"
-                                                onclick="rotateCard(this,'back','mobile')"><a
-                                                    href="javascript:void(0)" class="card-link text-white">Know
-                                                    Less</a></button>
-        
-        
-                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-2"
+                                            onclick="animateServiceCard(this, 'front','mobile')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know
+                                                More</a></button>
+
                                     </div>
                                 </div>
-        
-                            </center>
-                        </div>
+                            </div>
 
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card card-front shadow services-card card-service-mobile">
-                                        <div class="card-service-img-div">
-                                            <img src="{% static 'imgs/erp.png' %}" class="card-img-top" id="img-card-front-erp" alt="...">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">ERP Solutions</h5>
-                                            <p class="card-text">Too tired of handling your business alone ? <br> Get some quick
-                                                digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just as
-                                                        you
-                                                        say, just as you
-                                                        want!</b></em></p>
-                                        </div>
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-3"
-                                                onclick="rotateCard(this,'front','mobile')" ><a href="javascript:void(0)"
-                                                    class="card-link text-white">Know More</a></button>
-        
-                                        </div>
+                        </center>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 service-card-column-3">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow services-card card-service-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/erp.png' %}" class="card-img-top"
+                                            id="img-card-front-erp" alt="...">
                                     </div>
-                                    <div class="card card-back shadow services-card card-service-mobile">
-        
-                                        <div>
-                                            <img src="{% static 'imgs/erp.png' %}" class="card-img-top" alt="..." id="img-card-back-erp">
-                                        </div>
-                                        <ul class="list-group list-group-flush">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ERP Solutions</h5>
+                                        <p class="card-text card-text-3">Too tired of handling your business alone ? <br> Get some
+                                            quick
+                                            digital help. Dive in and avail some marvelous ERP Solutions.<br><b><em>Just
+                                                    as
+                                                    you
+                                                    say, just as you
+                                                    want!</b></em></p>
+                                        <ul class="list-group list-group-flush card-list-3">
                                             <li class="list-group-item">Extremely Scalable</li>
                                             <li class="list-group-item">Marketing & Financial
                                                 Analytics</li>
@@ -702,27 +685,25 @@
                                                 Channels</li>
                                             <li class="list-group-item">Nominal Pricing</li>
                                         </ul>
-        
-        
-                                        <div class="card-body">
-        
-                                            <button class="btn btn-block dc-btn dc-bg-dark services-btn-back-3"
-                                                onclick="rotateCard(this,'back','mobile')"><a
-                                                    href="javascript:void(0)" class="card-link text-white">Know
-                                                    Less</a></button>
-        
-        
-                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <button class="btn btn-block dc-btn dc-bg-dark services-btn-front-3"
+                                            onclick="animateServiceCard(this,'front','mobile')"><a href="javascript:void(0)"
+                                                class="card-link text-white">Know More</a></button>
+
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                    
+                            </div>
+                        </center>
+                    </div>
+
                 </div>
             </div>
         </section>
         <!-- Services Section Ends -->
-
+        
         <!-- Features Section Starts -->
         <section id="features" class="section-gradient-pb-bg-color">
             <div class="container features-rows">
@@ -730,209 +711,238 @@
                     <h3 class="main-font-color-dark feature-heading">Why are we special...</h3>
                 </center>
                 <div class="row mt-4 row-card">
-                    
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-magical-ui">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card shadow feature-card card-feature-mobile">
-                                        <div
-                                            class="card-service-img-div">
-                                            <img src="{% static 'imgs/magical-ui.png' %}" class="card-img-top" id="img-card-magical-ui" alt="..." >
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class='features-row-sub-heading'>Because it feels like
-                                                magic...
-                                            </h5>
-                                            <p class="text-center">
-            
-                                                No one likes the awfully difficult to navigate software with a million button to
-                                                choose from
-                                                where one feels like lost in a never ending labyrinth. We at Digify Center ensure
-                                                that your
-                                                virtual visitors get the easiest interface to explore your software.
-            
-                                            </p>
-                                            <p id="expand-magical-ui" class="text-center collapse expand-magical-ui" >Easy navigation
-                                                options,
-                                                minimalistic design overheads, simple directory structure and eye soothing
-                                                aesthetics would
-                                                enable everyone to live your software inside out, just as if it is actually...
-                                                magic.            
-                                            </p>
-            
-            
-                                        </div>
-                                        <div class="card-body">
-                                            <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
-                                                  data-target=".expand-magical-ui">
-                                                <a href="javascript:void(0)" class="card-link text-white">Read More</a></button>
-                                            </button>
-                                        </div>
+
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-magical-ui">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow feature-card card-feature-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/magical-ui.png' %}" class="card-img-top"
+                                            id="img-card-magical-ui" alt="...">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class='features-row-sub-heading'>Because it feels like
+                                            magic...
+                                        </h5>
+                                        <p class="text-center">
+
+                                            No one likes the awfully difficult to navigate software with a million
+                                            button to
+                                            choose from
+                                            where one feels like lost in a never ending labyrinth. We at Digify Center
+                                            ensure
+                                            that your
+                                            virtual visitors get the easiest interface to explore your software.
+
+                                        </p>
+                                        <p id="expand-magical-ui" class="text-center collapse expand-magical-ui">Easy
+                                            navigation
+                                            options,
+                                            minimalistic design overheads, simple directory structure and eye soothing
+                                            aesthetics would
+                                            enable everyone to live your software inside out, just as if it is
+                                            actually...
+                                            magic.
+                                        </p>
+
+
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
+                                            data-target=".expand-magical-ui">
+                                            <a href="javascript:void(0)" class="card-link text-white">Read
+                                                More</a></button>
+                                        </button>
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                        <p id="expand-magical-ui" class="text-center collapse expand-magical-ui feature-text-hidden">
-                            options,
-                            minimalistic design overheads, simple directory structure and eye soothing
-                            aesthetics would
-                            enable everyone to live your software inside out, just as if it is actually...
-                            magic.
-                        </p>
+                            </div>
+                        </center>
+                    </div>
+                    <p id="expand-magical-ui" class="text-center collapse expand-magical-ui feature-text-hidden">
+                        options,
+                        minimalistic design overheads, simple directory structure and eye soothing
+                        aesthetics would
+                        enable everyone to live your software inside out, just as if it is actually...
+                        magic.
+                    </p>
 
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-security">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card shadow feature-card card-feature-mobile">
-                                        <div
-                                            class="card-service-img-div">
-                                            <img src="{% static 'imgs/security.png' %}" class="card-img-top" id="img-card-security" alt="..." >
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class='features-row-sub-heading'>Because somehow
-                                                someone's always
-                                                watching...</h5>
-                                            <p class="text-center">
-            
-                                                Are you always afraid of a massive data leak? Or someone taking over your admin
-                                                priviliges? Or
-                                                as if someone will just spam and ruin your data records? If yes, then you have come
-                                                to the right
-                                                place. We at Digify Center, regard high-end data security as a non-negotiable.
-            
-            
-                                            </p>
-            
-            
-                                            <p id="expand-security" class="text-center collapse expand-security">
-                                                Be it SQL Injections, cross-site request forgery, phishing attacks, clickjacking, DNS
-                                                Tunneling, Man-in-middle attack, authentication failures or malware attacks, we got it all
-                                                covered for you.
-                                            </p>
-                                        </div>
-                                        <div class="card-body">
-                                            <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
-                                                  data-target=".expand-security" aria-expanded="false" aria-controls="expand-security">
-                                                <a href="javascript:void(0)" class="card-link text-white">Read More</a></button>
-                                            </button>
-                                        </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-security">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow feature-card card-feature-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/security.png' %}" class="card-img-top"
+                                            id="img-card-security" alt="...">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class='features-row-sub-heading'>Because somehow
+                                            someone's always
+                                            watching...</h5>
+                                        <p class="text-center">
+
+                                            Are you always afraid of a massive data leak? Or someone taking over your
+                                            admin
+                                            priviliges? Or
+                                            as if someone will just spam and ruin your data records? If yes, then you
+                                            have come
+                                            to the right
+                                            place. We at Digify Center, regard high-end data security as a
+                                            non-negotiable.
+
+
+                                        </p>
+
+
+                                        <p id="expand-security" class="text-center collapse expand-security">
+                                            Be it SQL Injections, cross-site request forgery, phishing attacks,
+                                            clickjacking, DNS
+                                            Tunneling, Man-in-middle attack, authentication failures or malware attacks,
+                                            we got it all
+                                            covered for you.
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
+                                            data-target=".expand-security" aria-expanded="false"
+                                            aria-controls="expand-security">
+                                            <a href="javascript:void(0)" class="card-link text-white">Read
+                                                More</a></button>
+                                        </button>
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                        <p id="expand-security" class="text-center collapse expand-security feature-text-hidden">
-                            Be it SQL Injections, cross-site request forgery, phishing attacks, clickjacking, DNS
-                            Tunneling, Man-in-middle attack, authentication failures or malware attacks, we got it all
-                            covered for you.
-                        </p>
+                            </div>
+                        </center>
+                    </div>
+                    <p id="expand-security" class="text-center collapse expand-security feature-text-hidden">
+                        Be it SQL Injections, cross-site request forgery, phishing attacks, clickjacking, DNS
+                        Tunneling, Man-in-middle attack, authentication failures or malware attacks, we got it all
+                        covered for you.
+                    </p>
 
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-old-is-obselete">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card shadow feature-card card-feature-mobile">
-                                        <div
-                                            class="card-service-img-div">
-                                            <img src="{% static 'imgs/img.png' %}" class="card-img-top" id="img-card-old-is-obselete" alt="..." >
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class='features-row-sub-heading'>Because the old is
-                                                obselete...
-                                            </h5>
-                                            <p class="text-center">
-            
-            
-            
-                                                The world is changing rapidly and so are the digital technologies around you. The
-                                                traditional
-                                                development platforms and tools are now obselete infront of the fast, stunning,
-                                                reliable and
-                                                robust technologies rolling out everyday in the world.
-                                            </p>
-                                            <p id="expand-old-is-obselete" class="text-center collapse expand-old-is-obselete" > We at Digify
-                                                Center, different from
-                                                anyone else, have commited to keep up the pace. Our developers have combined their
-                                                rich
-                                                experiences with the latest technologies in trend and are presenting to you the
-                                                complete package
-                                                of trendy and sturdy.
-            
-            
-                                            </p>
-            
-            
-                                        </div>
-                                        <div class="card-body">
-                                            <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
-                                                  data-target=".expand-old-is-obselete">
-                                                <a href="javascript:void(0)" class="card-link text-white">Read More</a></button>
-                                            </button>
-                                        </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-old-is-obselete">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow feature-card card-feature-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/img.png' %}" class="card-img-top"
+                                            id="img-card-old-is-obselete" alt="...">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class='features-row-sub-heading'>Because the old is
+                                            obselete...
+                                        </h5>
+                                        <p class="text-center">
+
+
+
+                                            The world is changing rapidly and so are the digital technologies around
+                                            you. The
+                                            traditional
+                                            development platforms and tools are now obselete infront of the fast,
+                                            stunning,
+                                            reliable and
+                                            robust technologies rolling out everyday in the world.
+                                        </p>
+                                        <p id="expand-old-is-obselete"
+                                            class="text-center collapse expand-old-is-obselete"> We at Digify
+                                            Center, different from
+                                            anyone else, have commited to keep up the pace. Our developers have combined
+                                            their
+                                            rich
+                                            experiences with the latest technologies in trend and are presenting to you
+                                            the
+                                            complete package
+                                            of trendy and sturdy.
+
+
+                                        </p>
+
+
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
+                                            data-target=".expand-old-is-obselete">
+                                            <a href="javascript:void(0)" class="card-link text-white">Read
+                                                More</a></button>
+                                        </button>
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                        <p id="expand-old-is-obselete" class="text-center collapse expand-old-is-obselete feature-text-hidden">
-                            Center, different from
-                            anyone else, have commited to keep up the pace. Our developers have combined their
-                            rich
-                            experiences with the latest technologies in trend and are presenting to you the
-                            complete package
-                            of trendy and sturdy.
-                        </p>
+                            </div>
+                        </center>
+                    </div>
+                    <p id="expand-old-is-obselete"
+                        class="text-center collapse expand-old-is-obselete feature-text-hidden">
+                        Center, different from
+                        anyone else, have commited to keep up the pace. Our developers have combined their
+                        rich
+                        experiences with the latest technologies in trend and are presenting to you the
+                        complete package
+                        of trendy and sturdy.
+                    </p>
 
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-time-cannot-be-bought">
-                            <center>
-                                <div class="card-container">
-                                    <div class="card shadow feature-card card-feature-mobile">
-                                        <div
-                                            class="card-service-img-div">
-                                            <img src="{% static 'imgs/time-cannot-be-bought.png' %}" class="card-img-top" id="img-card-time-cannot-be-bought" alt="..." >
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class='features-row-sub-heading'>Because who says time
-                                                cannot be
-                                                bought...</h5>
-                                            <p class="text-center">
-            
-                                                Got a lot of HR? or huge stocks in your warehouses? Or some long list of clienten?
-                                                We understand
-                                                that running requires you to manage a lot of things and consumes a lot of your time.
-                                                But it's
-                                                the moment to realise that the time spent in the fundamental bookkeeping prevents
-                                                one to reach
-                                                the greater heights of the success.
-            
-                                            </p>
-            
-                                            <p id="expand-time-cannot-be-bought" class="text-center collapse expand-time-cannot-be-bought" >Digify Center has
-                                                consistently developed optimum Enterprise
-                                                Resource Planning platforms & tools which will record and analyze your business data
-                                                for you. So
-                                                let it do the boring stuff of you while you climb the everest of your life.
-            
-            
-                                            </p>
-            
-            
-                                        </div>
-                                        <div class="card-body">
-                                            <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
-                                                  data-target=".expand-time-cannot-be-bought">
-                                                <a href="javascript:void(0)" class="card-link text-white">Read More</a></button>
-                                            </button>
-                                        </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-4 col-xl-4 feature-card-column feature-card-column-time-cannot-be-bought">
+                        <center>
+                            <div class="card-container">
+                                <div class="card shadow feature-card card-feature-mobile">
+                                    <div class="card-service-img-div">
+                                        <img src="{% static 'imgs/time-cannot-be-bought.png' %}" class="card-img-top"
+                                            id="img-card-time-cannot-be-bought" alt="...">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class='features-row-sub-heading'>Because who says time
+                                            cannot be
+                                            bought...</h5>
+                                        <p class="text-center">
+
+                                            Got a lot of HR? or huge stocks in your warehouses? Or some long list of
+                                            clienten?
+                                            We understand
+                                            that running requires you to manage a lot of things and consumes a lot of
+                                            your time.
+                                            But it's
+                                            the moment to realise that the time spent in the fundamental bookkeeping
+                                            prevents
+                                            one to reach
+                                            the greater heights of the success.
+
+                                        </p>
+
+                                        <p id="expand-time-cannot-be-bought"
+                                            class="text-center collapse expand-time-cannot-be-bought">Digify Center has
+                                            consistently developed optimum Enterprise
+                                            Resource Planning platforms & tools which will record and analyze your
+                                            business data
+                                            for you. So
+                                            let it do the boring stuff of you while you climb the everest of your life.
+
+
+                                        </p>
+
+
+                                    </div>
+                                    <div class="card-body">
+                                        <button class="btn btn-block dc-btn dc-bg-dark" data-toggle="collapse"
+                                            data-target=".expand-time-cannot-be-bought">
+                                            <a href="javascript:void(0)" class="card-link text-white">Read
+                                                More</a></button>
+                                        </button>
                                     </div>
                                 </div>
-                            </center>
-                        </div>
-                        <p id="expand-time-cannot-be-bought" class="text-center collapse expand-time-cannot-be-bought feature-text-hidden">
-                            consistently developed optimum Enterprise
-                            Resource Planning platforms & tools which will record and analyze your business data
-                            for you. So
-                            let it do the boring stuff of you while you climb the everest of your life.
+                            </div>
+                        </center>
+                    </div>
+                    <p id="expand-time-cannot-be-bought"
+                        class="text-center collapse expand-time-cannot-be-bought feature-text-hidden">
+                        consistently developed optimum Enterprise
+                        Resource Planning platforms & tools which will record and analyze your business data
+                        for you. So
+                        let it do the boring stuff of you while you climb the everest of your life.
 
-                        </p>
-                    
+                    </p>
+
                 </div>
             </div>
             <br>
@@ -950,14 +960,14 @@
                     <div class="card testimonial-card">
                         <div class="img">
                             <center><img src="{% static 'imgs/testimonial_amit.jpeg' %}"
-                                class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ..."> 
+                                    class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ...">
                             </center>
                         </div>
                         <div class="card-body">
                             <center>
                                 <h5 class="card-title">I.A.S. Kumar Amit</h5>
                                 <h6 class="card-title">Hon'ble Deputy Commissioner Patiala, Punjab</h6>
-    
+
                                 <em>
                                     <p class="card-text"><i class="fa fa-quote-left" aria-hidden="true"></i>
                                         The intricate design specific to our needs yet extremely easy to
@@ -972,7 +982,7 @@
                     <div class="card testimonial-card">
                         <div class="img">
                             <center><img src="{% static 'imgs/testimonial_inayat.jpeg' %}"
-                                class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ..."> 
+                                    class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ...">
                             </center>
                         </div>
                         <div class="card-body">
@@ -987,12 +997,12 @@
                                 </em>
                             </center>
                         </div>
-                        
+
                     </div>
                     <div class="card testimonial-card">
                         <div class="img">
                             <center><img src="{% static 'imgs/testimonial_harsh.jpg' %}"
-                                class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ...">
+                                    class="czard-imgz-top img-fluid card-img-top testimonial-img" alt=" ...">
                             </center>
                         </div>
                         <div class="card-body">
@@ -1029,7 +1039,7 @@
                         </center>
                     </div>
                 </div>
-    
+
                 <div class="row">
                     <div class="col-1 signup-form-extension-left"></div>
                     <div class="col-9 align-middle signup-form-extension-middle">
@@ -1039,36 +1049,39 @@
                             </center>
                             <div class="form-group">
                                 <label class="mt-2 signup-form-label-name" for="signup-name">Name</label>
-                                <input class="form-control" type="text" name="signup-name" id="signup-name-mobile" required>
-    
+                                <input class="form-control" type="text" name="signup-name" id="signup-name-mobile"
+                                    required>
+
                                 <label class="mt-3 signup-form-label-email" for="signup-email">Email address</label>
-                                <input class="form-control" type="email" name="signup-email" id="signup-email-mobile" required>
-    
-                                <label class="mt-3 signup-form-label-contact-number" for="signup-contact-number">Contact Number</label>
-                                <input class="form-control" type="tel" name="signup-contact-number" id="signup-contact-number-mobile" required>
+                                <input class="form-control" type="email" name="signup-email" id="signup-email-mobile"
+                                    required>
+
+                                <label class="mt-3 signup-form-label-contact-number" for="signup-contact-number">Contact
+                                    Number</label>
+                                <input class="form-control" type="tel" name="signup-contact-number"
+                                    id="signup-contact-number-mobile" required>
 
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your
                                     details with anyone else.</small>
-    
+
                             </div>
-                            <center><small class="form-validation-warning text-danger">Invalid Credentials</small></center>
+                            <center><small class="form-validation-warning text-danger">Invalid Credentials</small>
+                            </center>
                         </form>
                         <center>
-                            <button class="btn dc-bg-dark dc-btn submit-btn-signup-form"
-                                onclick="submitForm('mobile')">
+                            <button class="btn dc-bg-dark dc-btn submit-btn-signup-form" onclick="submitForm('mobile')">
                                 <a href="javascript:void(0);" class="text-white">Submit</a>
                             </button>
                         </center>
                         <center>
-                            <img src="./static/imgs/green-tick.png" alt=""
-                                class="img-form-success align-middle">
+                            <img src="./static/imgs/green-tick.png" alt="" class="img-form-success align-middle">
                         </center>
                     </div>
                     <div class="col-2 signup-form-extension-right"></div>
                 </div>
-    
+
             </div>
-    
+
         </section>
         <!-- Signup Form Ends -->
 
@@ -1079,10 +1092,13 @@
                 <div class="row align-self-center pt-5">
                     <div class="col-12">
                         <h2 class="text-white">About</h2>
-                        <p class="text-white text-justify">The skilled and experienced designers, developers, marketeers,
-                            innovators and advisors, all under one roof. We aim at simplifying the process of merging the
+                        <p class="text-white text-justify">The skilled and experienced designers, developers,
+                            marketeers,
+                            innovators and advisors, all under one roof. We aim at simplifying the process of merging
+                            the
                             physical and virtual worlds precisely catering to user needs. Customer satisfaction is our
-                            priority and nothing matters to us more than your approval. Working for you, <b>Just as you say,
+                            priority and nothing matters to us more than your approval. Working for you, <b>Just as you
+                                say,
                                 just as you want!</b></p>
                     </div>
                     <div class="col-12">
@@ -1093,11 +1109,12 @@
                     </div>
                 </div>
             </div>
-    
+
         </footer>
         <!-- Footer Ends -->
     </div>
     <!-- Mobile Container Ends -->
 
 </body>
+
 </html>

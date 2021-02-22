@@ -14,6 +14,48 @@ $(document).ready(() => {
     console.clear();
 })
 
+const animateServiceCard= (obj,string,view) => {
+    
+    var button_class = $(obj).attr('class').split(' ');
+    var active_class =  button_class[button_class.length-1].split('-');
+    var service_index = active_class[active_class.length-1];
+
+    var active_text = '.card-text-' + service_index.toString();
+    var active_list = '.card-list-' + service_index.toString();
+    var services_current_height = $('#mobile-container #services').css('height');
+    
+    
+    $('.service-card-column-'+ service_index.toString()).animate({height:'750px'},1500);
+    console.log();
+    $(active_text).css('height','0px')
+    $(active_text).css({
+    opacity          : 0,
+    WebkitTransition : 'opacity 1s ease-in-out',
+    MozTransition    : 'opacity 1s ease-in-out',
+    MsTransition     : 'opacity 1s ease-in-out',
+    OTransition      : 'opacity 1s ease-in-out',
+    transition       : 'opacity 1s ease-in-out',
+    });
+
+
+    $(active_list).addClass('card-list-animation')
+    $(active_list).css({
+    opacity          : 1,
+    WebkitTransition : 'opacity 3s ease-in-out',
+    MozTransition    : 'opacity 3s ease-in-out',
+    MsTransition     : 'opacity 3s ease-in-out',
+    OTransition      : 'opacity 3s ease-in-out',
+    transition       : 'opacity 3s ease-in-out',
+    });
+
+    
+    $('#mobile-container #services').animate({height:(parseInt(services_current_height.split('px')[0])+150).toString() + 'px'},1500)
+
+    
+
+
+}
+
 const rotateCard = (obj,string,view) => {
     
     var button_class = $(obj).attr('class').split(' ');
