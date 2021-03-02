@@ -101,7 +101,7 @@
     /* Services Section Styling Starts */
     #mobile-container #services {
         padding-top: 1.5rem;
-        height: 2000px;
+        height: 2450px;
     }
 
     #mobile-container .card-container {
@@ -123,17 +123,25 @@
         position: absolute;
         transition: all 0.9s;
         backface-visibility: hidden;
+        height: 750px;
     }
 
-    #mobile-container .card-back .card-body {
-        position: relative;
+    
+
+    
+    #mobile-container .service-card-column-1 {
+        min-height: 780px;
+    }
+    #mobile-container .service-card-column-2 {
+        min-height: 780px;
+    }
+    #mobile-container .service-card-column-3 {
+        min-height: 780px;
     }
 
-    #mobile-container .service-card-column {
-        height: 600px;
-    }
-
-    #mobile-container #img-card-front-web-dev,
+    
+        
+        #mobile-container #img-card-front-web-dev,
     #mobile-container #img-card-front-app-dev,
     #mobile-container #img-card-front-erp,
     #mobile-container #img-card-back-web-dev,
