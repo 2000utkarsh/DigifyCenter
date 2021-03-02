@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Digify Center</title>
+
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Link Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- Link Google Font CSS -->
+    <!-- Link Custom Style Files -->
+    <link rel="stylesheet" href="{% static 'css/style_constants.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_desktop.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_media_desktop.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_media_mobile.css' %}">
+
+    <!-- Link Jquery JS -->
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <!-- Link Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
+    <!-- Link Owl Carousel JS -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Link Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/8e737b130b.js" crossorigin="anonymous"></script>
+    <!-- Link Custom JS -->
+    <script src="{% static 'js/index.js' %}"></script>
+
+</head>
+<body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top dc-bg-dark">
+        <a class="navbar-brand" href="{% url 'app:index' %}">Digify Center</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'app:index' %}">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#services','bottom')">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#features','bottom')">
+                        Features
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="smoothScroll('#testimonials','bottom')">
+                        Testimonials
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
+</body>
+</html>
