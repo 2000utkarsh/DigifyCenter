@@ -250,6 +250,26 @@
     #mobile-container footer {
         padding-bottom: 8rem;
     }
+
+    #mobile-container footer .footer-services-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    #mobile-container footer .footer-contact-icon-img {
+        height: 1.5rem !important;
+    }
+    
+    #mobile-container footer .footer-contact-icon {
+        font-size: 2rem !important;
+        margin: 0.5rem !important;
+    }
+    
+    #mobile-container footer .footer-contact-icon:hover {
+        transform: scale(1.2) !important;
+    }
     /* Footer Styling Ends */
 
     /* Signup Form Section Starts */    
