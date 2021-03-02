@@ -7,8 +7,9 @@ from . import views
 app_name = 'app'
 urlpatterns = [
     
-    path('get_details',views.GetDetails,name='get_details'),
+    path('get_details/',views.GetDetails,name='get_details'),
     path('',views.index,name='index'),
+    path('pricing/',views.pricing,name='pricing'),
 
     
 ]

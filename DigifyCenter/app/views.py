@@ -6,8 +6,11 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def index(request):
-    
     return render(request, 'index.html')
+
+
+def pricing(request):
+    return render(request, 'pricing.html')
 
 
 @csrf_exempt
