@@ -302,3 +302,34 @@
 /* Signup Form Section Ends */
 
 
+/* Footer Starts */
+#desktop-container footer {
+    height: 450px;
+}
+
+#desktop-container footer .footer-services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    font-size: 1.1rem;
+}
+
+#desktop-container footer .footer-about-us {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+#desktop-container footer .footer-contact-icon-img {
+    height: 2rem !important;
+}
+
+#desktop-container footer .footer-contact-icon {
+    font-size: 2rem !important;
+    margin: 0.5rem !important;
+}
+
+#desktop-container footer .footer-contact-icon:hover {
+    transform: scale(1.2) !important;
+}
+/* Footer Ends */
