@@ -59,7 +59,15 @@
     transform: scaleX(1);
     transition: 1.4s;
 }
-
+.pricing-btn{
+    padding: 0 !important;
+    height: 2.5rem !important;
+    width: 5.5rem;
+}
+.whatsapp-btn{
+    height: 2.8rem !important;
+    margin-left: 0.5rem;
+}
 a {
     text-decoration: none !important;
 }
