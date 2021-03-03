@@ -15,7 +15,6 @@ def pricing(request):
 
 @csrf_exempt
 def GetDetails(request):
-    
     if request.method == 'POST':
         name = request.POST.get('name', None)
         email = request.POST.get('email', None)

@@ -317,7 +317,7 @@
     /* Footer Styling Ends */
 
     /* Signup Form Section Starts */    
-    #mobile-container #signup-form {
+    #mobile-container #signup-form , #mobile-container-pricing #signup-form {
         height: 460px;
         width: 275px;
         position: fixed;
@@ -326,18 +326,18 @@
         z-index: 10;
     }
     
-    #mobile-container #signup-form > .container {
+    #mobile-container #signup-form > .container , #mobile-container-pricing #signup-form > .container {
         height: 100%;
         border-radius: 15px;
     }
     
-    #mobile-container .signup-form-header {
+    #mobile-container .signup-form-header , #mobile-container-pricing .signup-form-header {
         height: 65px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
     
-    #mobile-container #signup-form-open-close-icon{
+    #mobile-container #signup-form-open-close-icon , #mobile-container-pricing #signup-form-open-close-icon {
         border-radius: 50%;
         height: 35px;
         width: 35px;
@@ -346,7 +346,7 @@
         margin-right: 4px;
     }
     
-    #mobile-container .img-form-success {
+    #mobile-container .img-form-success , #mobile-container-pricing .img-form-success {
         display:none; 
         height: 120px; 
         width: 160px; 
@@ -354,12 +354,15 @@
     }
     
     #mobile-container .signup-form-extension-left,
-    #mobile-container .signup-form-extension-middle{
+    #mobile-container .signup-form-extension-middle,
+    #mobile-container-pricing .signup-form-extension-left,
+    #mobile-container-pricing .signup-form-extension-middle{
         background-color: rgb(233, 245, 250);
         padding: 0;
     }
     
-    #mobile-container .signup-form-extension-right{
+    #mobile-container .signup-form-extension-right,
+    #mobile-container-pricing .signup-form-extension-right{
         height: 395px;
         background-color: transparent;
         
@@ -367,13 +370,17 @@
     
     #mobile-container .signup-form-label-name,
     #mobile-container .signup-form-label-email,
-    #mobile-container .signup-form-label-contact-number{
+    #mobile-container .signup-form-label-contact-number,
+    #mobile-container-pricing .signup-form-label-name,
+    #mobile-container-pricing .signup-form-label-email,
+    #mobile-container-pricing .signup-form-label-contact-number{
     
         font-size: 0.8rem;
     }
     
 
-    #mobile-container .signup-form-header-extension{
+    #mobile-container .signup-form-header-extension,
+    #mobile-container-pricing .signup-form-header-extension{
         padding: 0;
     }
     

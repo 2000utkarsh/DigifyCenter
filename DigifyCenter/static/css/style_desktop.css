@@ -267,7 +267,7 @@
 
 
 /* Signup Form Section Starts */
-#desktop-container #signup-form {
+#desktop-container #signup-form , #desktop-container-pricing #signup-form {
     height: 450px;
     width: 375px;
     position: fixed;
@@ -276,18 +276,18 @@
     z-index: 10;
 }
 
-#desktop-container #signup-form > .container {
+#desktop-container #signup-form > .container , #desktop-container-pricing #signup-form > .container {
     height: 100%;
     border-radius: 15px;
 }
 
-#desktop-container .signup-form-header {
+#desktop-container .signup-form-header , #desktop-container-pricing .signup-form-header {
     height: 8vh;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-#desktop-container #signup-form-open-close-icon{
+#desktop-container #signup-form-open-close-icon , #desktop-container-pricing #signup-form-open-close-icon{
     border-radius: 50%;
     height: 45px;
     width: 45px;
@@ -296,7 +296,7 @@
     /* animation: 1s infinite animateButton; */
 }
 
-#desktop-container .img-form-success {
+#desktop-container .img-form-success , #desktop-container-pricing .img-form-success {
     display:none; 
     height: 120px; 
     width: 160px; 
