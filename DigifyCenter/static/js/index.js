@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    $('#loading').hide();   
+    $('#website-container').css('display','block');
     appearOnScroll();
     slideOwlCarousel();
     setTimeout(() => {
@@ -12,7 +14,9 @@ $(document).ready(() => {
     manageSignupFormDesktop();
     manageSignupFormMobile();
     console.clear();
+    
 })
+
 
 const rotateCard = (obj,string,view) => {
     
