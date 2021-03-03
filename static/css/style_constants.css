@@ -72,6 +72,12 @@ a {
 #mobile-container {
     display: none;
 }
+#desktop-container-pricing {
+    display: block;
+}
+#mobile-container-pricing {
+    display: none;
+}
 
 .form-validation-warning{
     display: none;
