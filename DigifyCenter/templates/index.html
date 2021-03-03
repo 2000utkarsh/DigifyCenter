@@ -38,6 +38,17 @@
     <!-- Navbar Starts -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top dc-bg-dark">
         <a class="navbar-brand" href="{% url 'app:index' %}">Digify Center</a>
+        
+            <button class="dc-bg-light btn pricing-btn-mobile ml-auto text-white">
+                    <a class="nav-link" href="{% url 'app:pricing' %}">
+                    <strong class="text-white">Pricing</strong>
+                </a>
+            </button>
+    
+            <a class="footer-link text-white whatsapp-link-mobile" href="https://wa.me/919758940909" target="_blank"><img class="whatsapp-btn-mobile"
+                    src="https://img.icons8.com/color/96/000000/whatsapp--v4.png" /></a>
+
+        
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -63,7 +74,7 @@
                 <li class="nav-item">
                     <button class="dc-bg-light btn pricing-btn">
                         <a class="nav-link" href="{% url 'app:pricing' %}">
-                            <strong>Pricing</strong>
+                            <strong class="text-white">Pricing</strong>
                         </a>
                     </button>
                 </li>
@@ -75,7 +86,6 @@
                             src="https://img.icons8.com/color/96/000000/whatsapp--v4.png" /></a>
 
                 </li>
-
             </ul>
         </div>
     </nav>

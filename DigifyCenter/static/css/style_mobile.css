@@ -1,4 +1,16 @@
 @media only screen and (max-width: 1000px) {
+    .pricing-btn-mobile, .whatsapp-link-mobile, .whatsapp-btn-mobile{
+        display: block !important;
+    }
+    .pricing-btn-mobile{
+        padding: 0 !important;
+        height: 2.5rem !important;
+        width: 5.5rem;
+    }
+    .whatsapp-btn-mobile{
+        height: 2.8rem !important;
+        margin-left: 0.5rem;
+    }
     #desktop-container {
         display: none;
     }
